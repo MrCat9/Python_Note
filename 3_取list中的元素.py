@@ -15,3 +15,7 @@ if __name__ == "__main__":
     for b in list1:    #从第一个开始取
         print(b)    #
     print(list1)    #['111', '222', '333', '444', '555']
+    
+    for c in list1:
+        print(c)
+        list1 = list1[1:]    #没执行到这句的话list1的第一个元素不会被丢弃
