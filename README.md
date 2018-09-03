@@ -16,3 +16,5 @@ with open("test.json", "r") as f:
         doc = json.load(f)
 # 文件里都是英文的话r,rb都行
 # 文件里有中文的话用r会报错，用rb不会
+
+5_全局变量要在某个方法内对其进行修改时，要用global
