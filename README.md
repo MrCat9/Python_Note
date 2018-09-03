@@ -18,3 +18,5 @@ with open("test.json", "r") as f:
 # 文件里有中文的话用r会报错，用rb不会
 
 5_全局变量要在某个方法内对其进行修改时，要用global
+
+6_set可以对一个list去重，可以让两个list相减，得到差集
