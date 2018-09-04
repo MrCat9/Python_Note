@@ -20,3 +20,5 @@ with open("test.json", "r") as f:
 5_全局变量要在某个方法内对其进行修改时，要用global
 
 6_set可以对一个list去重，可以让两个list相减，得到差集
+
+7_ HTTP状态码
