@@ -26,3 +26,5 @@ with open("test.json", "r") as f:
 8_geohash2
 
 9_selenium设置无界面浏览，设置代理ip
+
+10_list的指针问题
