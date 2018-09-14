@@ -28,3 +28,5 @@ with open("test.json", "r") as f:
 9_selenium设置无界面浏览，设置代理ip
 
 10_list的指针问题
+
+11_MySQL数据库储存位置
