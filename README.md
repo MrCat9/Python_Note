@@ -32,3 +32,5 @@ with open("test.json", "r") as f:
 11_MySQL数据库储存位置
 
 12_requests
+
+13_用re去除所有html标签，保留标签里面的内容
