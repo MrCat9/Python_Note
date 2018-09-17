@@ -30,3 +30,5 @@ with open("test.json", "r") as f:
 10_list的指针问题
 
 11_MySQL数据库储存位置
+
+12_requests
