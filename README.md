@@ -34,3 +34,5 @@ with open("test.json", "r") as f:
 12_requests
 
 13_用re去除所有html标签，保留标签里面的内容
+
+14_re报错bad character range
