@@ -37,4 +37,5 @@ with open("test.json", "r") as f:
 
 14_re报错bad character range
 
-15_插入到sql中的数据包含单引号（'）的处理方法
+15_插入到sql中的数据包含单引号（'）时，应将一个单引号（'）改成两个单引号（''）
+str1 = str1.replace("'", "''")
