@@ -10,12 +10,12 @@ pop,append,for
 4_写文件(w,wb)读文件(r,rb)
 with open("test.json", "w") as f:
         f.write(json_doc)
-# w下write()中的变量为str
-# wb下write()中的变量为byte
+#### w下write()中的变量为str
+#### wb下write()中的变量为byte
 with open("test.json", "r") as f:
         doc = json.load(f)
-# 文件里都是英文的话r,rb都行
-# 文件里有中文的话用r会报错，用rb不会
+#### 文件里都是英文的话r,rb都行
+#### 文件里有中文的话用r会报错，用rb不会
 
 5_全局变量要在某个方法内对其进行修改时，要用global
 
@@ -36,3 +36,5 @@ with open("test.json", "r") as f:
 13_用re去除所有html标签，保留标签里面的内容
 
 14_re报错bad character range
+
+15_插入到sql中的数据包含单引号（'）的处理方法
