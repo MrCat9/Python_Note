@@ -44,3 +44,7 @@ str1 = str1.replace("'", "''")
 父进程所有Python对象都必须通过pickle序列化再传到子进程去，所有，如果multiprocessing在Windows下调用失败了，要先考虑是不是pickle失败了。
 
 17_从数据库中取出数据，转为list
+
+18_验证码识别(pytesseract)
+
+19_一款入门级的人脸、视频、文字检测以及识别的项目
