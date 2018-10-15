@@ -56,6 +56,7 @@ for book in user.books:
 session.close()
 
 
+# 当我们查询一个User对象时，该对象的books属性将返回一个包含若干个Book对象的list。
 """
 type: <class '__main__.Book'>
 name: home
