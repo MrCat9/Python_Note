@@ -50,3 +50,6 @@ str1 = str1.replace("'", "''")
 19_一款入门级的人脸、视频、文字检测以及识别的项目
 
 20_ORM_sqlalchemy（用于操作数据库）
+
+20_2_ORM_sqlalchemy（外键）
+
