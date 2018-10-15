@@ -53,3 +53,9 @@ print('type:', type(user))
 print('name:', user.name)
 # 关闭Session:
 session.close()
+
+
+"""
+type: <class '__main__.User'>
+name: Bob
+"""
