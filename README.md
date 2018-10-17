@@ -35,6 +35,8 @@ with open("test.json", "r") as f:
 
 13_用re去除所有html标签，保留标签里面的内容
 
+13_2_用re匹配出img标签，再匹配出img标签中的图片url
+
 14_re报错bad character range
 
 15_插入到sql中的数据包含单引号（'）时，应将一个单引号（'）改成两个单引号（''）
