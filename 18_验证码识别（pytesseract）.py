@@ -51,6 +51,7 @@ if __name__ == '__main__':
 
 
 # pytesseract安装 https://github.com/vipstone/faceai/blob/master/doc/tesseractOCR.md
+# 语言包下载 （将下载的.traineddata文件拷贝到tessdata目录下） https://github.com/tesseract-ocr/tesseract/wiki/Data-Files
 
 # 一款入门级的人脸、视频、文字检测以及识别的项目
 # https://github.com/vipstone/faceai
