@@ -100,6 +100,16 @@ if __name__ == "__main__":
 #     with open("test.webp", "wb") as f:
 #         f.write(r.content)
 #         f.close()
+
+
+
+
+# # 下载视频
+# url = ""
+# r = requests.get(url=url, headers=headers)
+# with open("test.mp4", "wb") as f:
+#     f.write(r.content)
+#     f.close()
     
     
     
