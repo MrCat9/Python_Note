@@ -55,3 +55,5 @@ str1 = str1.replace("'", "''")
 
 20_2_ORM_sqlalchemy（外键）
 
+21_列表生成式
+列出100以内3的倍数
