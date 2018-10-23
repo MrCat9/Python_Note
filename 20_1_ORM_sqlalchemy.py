@@ -59,3 +59,11 @@ session.close()
 type: <class '__main__.User'>
 name: Bob
 """
+
+"""
+primary_key	如果设为 True,这列就是表的主键
+unique	如果设为 True,这列不允许出现重复的值
+index	如果设为 True,为这列创建索引,提升查询效率
+nullable	如果设为 True,这列允许使用空值;如果设为 False,这列不允许使用空值
+default	为这列定义默认值
+"""
