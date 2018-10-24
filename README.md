@@ -62,3 +62,5 @@ str1 = str1.replace("'", "''")
 
 23_合并dict
 
+24_解决报错_'latin-1' codec can't encode characters in position
+
