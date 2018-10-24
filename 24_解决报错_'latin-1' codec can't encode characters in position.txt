@@ -1,0 +1,11 @@
+摘自  https://blog.csdn.net/FreshManCoder/article/details/79771281
+
+简单解决Python pymysql数据插入中UnicodeEncodeError: 'latin-1' codec can't encode characters in position的问题
+
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 101-103: ordinal not in range(256)
+最近在学习爬虫，将数据爬取以后想存入Mysql数据库，但是运行时遇到了以上错误。
+
+原因是pymysql库在处理mysql语句时，默认的编码方式是'latin-1'，这种编码方式能识别的字符是有限的。
+
+解决办法：用文本编辑器打开Python安装目录下\Lib\site-packages\pymysql\connections.py，  
+             搜索DEFAULT_CHARSET = 'latin1' ,将 'latin1' 改成 'utf8'，问题就解决了。
