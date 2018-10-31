@@ -188,3 +188,17 @@ print(text)
 
 
 
+27_日志logging
+
+```python
+# -*- coding: utf-8 -*-
+# 摘自 https://docs.python.org/3.6/howto/logging.html#logging-basic-tutorial
+
+import logging
+
+if __name__ == '__main__':
+    logging.basicConfig(filename='log_examp.log', level=logging.DEBUG)
+    logging.debug('This message should go to the log file')
+    logging.info('So should this')
+    logging.warning('And this, too')
+```
