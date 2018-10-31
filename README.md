@@ -172,3 +172,19 @@ urllib.parse.unquote_plus()
 
 
 
+26_执行命令行，获取命令行打印的信息
+```python
+# -*- coding: utf-8 -*-
+
+import os
+
+command = 'ping www.baidu.com '  # 可以直接在命令行中执行的命令
+r = os.popen(command)  # 执行该命令
+text = r.read()  # 命令行打印的信息
+
+print(text)
+```
+
+
+
+
