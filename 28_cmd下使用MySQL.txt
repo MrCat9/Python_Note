@@ -1,0 +1,43 @@
+查看MySQL安装路径：
+
+1.打开navicat
+
+2.新建查询
+
+3.
+select @@basedir
+
+
+
+
+连接MySQL：
+
+cd 到 MySQL 的 bin 目录下
+
+λ mysql -u root -p
+
+
+
+
+查看databases：
+
+mysql> show databases;
+
+
+
+
+选择database：
+
+mysql> use (databaseName)
+
+
+
+
+查看database下的表：
+
+mysql> show tables;
+
+
+
+
+
