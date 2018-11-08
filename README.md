@@ -206,14 +206,8 @@ if __name__ == '__main__':
 
 
 
-28_查看MySQL安装路径
+28_cmd下使用MySQL
 
-1.打开navicat
 
-2.新建查询
 
-3.
 
-```sql
-select @@basedir
-```
