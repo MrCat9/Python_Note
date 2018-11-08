@@ -213,6 +213,7 @@ if __name__ == '__main__':
 2.新建查询
 
 3.
+
 ```mysql
 select @@basedir
 ```
