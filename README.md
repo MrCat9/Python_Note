@@ -214,6 +214,6 @@ if __name__ == '__main__':
 
 3.
 
-```mysql
+```sql
 select @@basedir
 ```
