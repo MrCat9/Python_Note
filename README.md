@@ -202,3 +202,17 @@ if __name__ == '__main__':
     logging.info('So should this')
     logging.warning('And this, too')
 ```
+
+
+
+
+28_查看MySQL安装路径
+
+1.打开navicat
+
+2.新建查询
+
+3.
+```mysql
+select @@basedir
+```
