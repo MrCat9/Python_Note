@@ -74,7 +74,9 @@ with open("test.json", "r") as f:
 
 
 
-11_MySQL数据库储存位置
+11_对dict的list去重
+
+根据dict中的某一key的value，对dict的list去重，value相同视为重复
 
 
 
