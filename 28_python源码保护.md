@@ -2,6 +2,8 @@
 
 ## pyc
 
+pyc_test.py 下
+
 ```python
 # -*- coding: utf-8 -*-
 
