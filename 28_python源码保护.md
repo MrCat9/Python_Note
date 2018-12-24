@@ -10,7 +10,7 @@ pyc_test.py 下
 import py_compile
 
 
-py_compile.compile(r'F:\pycharm\···\test01.py')  # py文件完整的路径.
+py_compile.compile(r'F:\pycharm\···\test01.py')  # py文件完整的路径
 ```
 
 ## 打包成exe
