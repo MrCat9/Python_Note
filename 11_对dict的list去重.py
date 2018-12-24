@@ -25,3 +25,4 @@ if __name__ == '__main__':
     new_dict_list = dict_list_duplicate(old_dict_list, "title")  # 根据dict中的title去重，title相同视为重复
     print(new_dict_list)
     # [{'title': 'title1', 'name': 'name1'}, {'title': 'title2', 'name': 'name2'}]
+
