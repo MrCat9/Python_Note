@@ -2,11 +2,11 @@
 # 根据dict中的某一key的value，对dict的list去重，value相同视为重复
 
 
-def dict_list_duplicate(dict_list, key):
+def dict_list_duplicate(dict_list, duplicate_key):
     temp_list = []
     new_dict_list = []
     for dict_ in dict_list:
-        value = dict_[key]
+        value = dict_[duplicate_key]
         if value not in temp_list:
             temp_list.append(value)
             new_dict_list.append(dict_)
