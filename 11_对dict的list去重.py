@@ -5,8 +5,8 @@
 # def dict_list_duplicate(dict_list, duplicate_key):
 #     temp_list = []
 #     new_dict_list = []
-#     for dict_ in dict_list:
-#         value = dict_[duplicate_key]
+#     for a_dict in dict_list:
+#         value = a_dict[duplicate_key]
 #         if value not in temp_list:
 #             temp_list.append(value)
 #             new_dict_list.append(dict_)
@@ -16,8 +16,8 @@
 # def dict_list_duplicate(dict_list, duplicate_key):
 #     temp_set = set()
 #     new_dict_list = []
-#     for dict_ in dict_list:
-#         value = dict_[duplicate_key]
+#     for a_dict in dict_list:
+#         value = a_dict[duplicate_key]
 #         if value not in temp_set:
 #             temp_set.add(value)
 #             new_dict_list.append(dict_)
@@ -27,8 +27,8 @@
 def dict_list_duplicate(dict_list, duplicate_key):
     temp_set = set()
     new_dict_list = []
-    for dict_ in dict_list:
-        value = dict_[duplicate_key]
+    for a_dict in dict_list:
+        value = a_dict[duplicate_key]
         old_set_len = len(temp_set)
         temp_set.add(value)
         new_set_len = len(temp_set)
