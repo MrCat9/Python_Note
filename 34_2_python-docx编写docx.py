@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # https://blog.csdn.net/sinat_30711195/article/details/80725435
+# python-docx 文档 https://python-docx.readthedocs.io/en/latest/
 
 from docx import Document
 from docx.shared import Inches  # 图片大小
