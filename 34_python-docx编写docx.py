@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 摘自 https://www.cnblogs.com/wumingxiaoyao/p/8315814.html
+# 摘自 https://blog.csdn.net/sinat_37005367/article/details/77855359#
 # python-docx 文档 https://python-docx.readthedocs.io/en/latest/
 
 from docx import Document
