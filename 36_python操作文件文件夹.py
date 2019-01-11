@@ -21,6 +21,10 @@ try:
 except Exception as e:
     print(str(e))
 
+path = 'test_dir'
+if os.path.exists(path) is not True:
+    os.makedirs(path)
+
 # 拷贝文件 file_path 到指定目录 tag_dir
 # shutil.copy(file_path, tag_dir)
 shutil.copy('test01.py', 'test_dir')
