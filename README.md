@@ -268,3 +268,12 @@ if __name__ == '__main__':
 
 
 39_python分布式(BaseManager)
+
+
+
+
+40_python获取CPU使用率，内存使用率，网络使用状态
+
+
+
+
