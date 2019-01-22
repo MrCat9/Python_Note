@@ -274,6 +274,10 @@ if __name__ == '__main__':
 
 40_python获取CPU使用率，内存使用率，网络使用状态
 
+```
+https://blog.csdn.net/bubu8633/article/details/8258342
+```
+
 
 
 
