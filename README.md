@@ -175,6 +175,7 @@ urllib.parse.unquote_plus()
 
 
 26_执行命令行，获取命令行打印的信息
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -279,5 +280,14 @@ https://blog.csdn.net/bubu8633/article/details/8258342
 ```
 
 
+
+
+41_python搭建简单的web服务器实现资源文件共享
+
+cmd 下
+```
+λ python -m http.server 8888
+Serving HTTP on 0.0.0.0 port 8888 (http://0.0.0.0:8888/) ...
+```
 
 
