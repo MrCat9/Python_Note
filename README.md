@@ -316,6 +316,18 @@ https://blog.csdn.net/SL_World/article/details/86691747
 
 44_selenium操作ie_python操作剪切板_python执行cmd.py
 
+```
+ie driver 下载：
+http://selenium-release.storage.googleapis.com/index.html
+
+Selenium IE webdriver 常见问题：
+https://www.jianshu.com/p/3ee5587ee364
+https://blog.csdn.net/u013061459/article/details/77145215
+
+Selenium+Python调用IE浏览器：
+https://www.cnblogs.com/leeboke/p/5013793.html
+```
+
 
 
 
