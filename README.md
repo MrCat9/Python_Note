@@ -334,14 +334,23 @@ https://www.cnblogs.com/leeboke/p/5013793.html
 45_python操作MongoDB
 
 ```
+python操作MongoDB
 https://www.cnblogs.com/melonjiang/p/6536876.html
 ```
 
 ```
-开启mongodb
+开启MongoDB
 
 F:\mongodb\bin
 λ mongod -dbpath "F:\mongoDB\data\db"
+```
+
+```
+MongoDB数据导入与导出
+https://www.cnblogs.com/qingtianyu2015/p/5968400.html
+
+F:\mongodb\bin
+λ mongoexport -d test_database -c test_collection -o C:\Users\admin\Desktop\test.json --type json
 ```
 
 
