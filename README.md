@@ -356,3 +356,23 @@ F:\mongodb\bin
 
 
 
+46_python去除字符串中的\x20_\xa0_\t_\n
+
+```python
+# -*- coding: utf-8 -*-
+
+str1 = '你好\x20啊\xa0啊\t啊\n啊'
+print(str1)
+# 你好 啊 啊	啊
+# 啊
+
+str1 = ''.join(str1.split())
+print(str1)
+# 你好啊啊啊啊
+```
+
+
+
+
+47_
+
