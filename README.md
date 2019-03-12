@@ -332,3 +332,18 @@ https://www.cnblogs.com/leeboke/p/5013793.html
 
 
 45_python操作MongoDB
+
+```
+https://www.cnblogs.com/melonjiang/p/6536876.html
+```
+
+```
+开启mongodb
+
+F:\mongodb\bin
+λ mongod -dbpath "F:\mongoDB\data\db"
+```
+
+
+
+
