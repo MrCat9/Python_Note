@@ -13,5 +13,16 @@ def save_data_to_db(data_dict):
 
 
 if __name__ == '__main__':
-    data_dict = {'name': 'zhangsan', 'age': 18, 'other': {'sex': 'M', 'from': 'CN'}}
+    data_dict = {
+        'name': 'zhangsan',
+        'age': 18,
+        'other': {
+            'sex': 'M',
+            'from': 'CN',
+        },
+        'data': [
+            {'code1': 'python', 'year': 1},
+            {'code2': 'java'},
+        ],
+    }
     save_data_to_db(data_dict)
