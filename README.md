@@ -374,5 +374,12 @@ print(str1)
 
 
 
-47_
+47_selenium_find_element_note
+
+```
+find_element_by_xpath
+find_element_by_id
+find_element_by_class_name
+find_element_by_tag_name
+```
 
