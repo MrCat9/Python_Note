@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# xpath如何取包含多个class属性: https://blog.csdn.net/qq_34627002/article/details/83309209
 
 from selenium import webdriver
 
