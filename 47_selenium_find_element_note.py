@@ -51,3 +51,5 @@ temp = a.find_element_by_tag_name('a')  # element 不能迭代
 print(temp.get_attribute('href'))
 
 
+browser.quit()
+  
