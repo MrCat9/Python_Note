@@ -4,14 +4,14 @@ from selenium import webdriver
 
 
 # 设置浏览器
-chromeOptions = webdriver.ChromeOptions()
+chrome_options = webdriver.ChromeOptions()
 
 # # 设置无界面浏览
-# chromeOptions.set_headless(True)
+# chrome_options.set_headless(True)
 
 # 浏览器
 browser = webdriver.Chrome(executable_path="F:/chromedriver_win32/chromedriver.exe",
-                           chrome_options=chromeOptions)  # chromedriver.exe 的路径
+                           chrome_options=chrome_options)  # chromedriver.exe 的路径
 browser.maximize_window()  # 窗口最大化
 browser.implicitly_wait(5)  # 隐式等待。如果找到，就继续执行，如果没找到就等待10s
 
