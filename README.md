@@ -64,7 +64,7 @@ with open("test.json", "r") as f:
 
 
 
-9_selenium设置无界面浏览，设置代理ip
+9_selenium设置无界面浏览，设置user-agent，设置代理ip
 
 
 
