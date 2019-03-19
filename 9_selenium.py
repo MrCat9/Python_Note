@@ -28,4 +28,7 @@ if __name__ == "__main__":
     browser.maximize_window()    #窗口最大化
 
 
-    browser.get("http://www.baidu.com")
+    browser.get("http://httpbin.org/ip")
+    print(browser.page_source)
+    
+    browser.quit()
