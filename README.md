@@ -386,3 +386,14 @@ find_element_by_tag_name
 
 
 48_selenium_使用随机UA头
+
+
+
+
+49_Python3操作Elasticsearch
+
+```
+Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126327/article/details/81285487
+```
+
+
