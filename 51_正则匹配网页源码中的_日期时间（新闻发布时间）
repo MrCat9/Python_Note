@@ -78,7 +78,6 @@ def parse_publish_time(html_str):
                 print('[try match publish_time] match failed, use', '"'+regex_name+'"')
 
             if publish_time:
-                print(publish_time)
                 break
         except Exception as e:
             # print('[Error] wrong datetime format')
@@ -90,6 +89,7 @@ def parse_publish_time(html_str):
         publish_time = now_time
 
     publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
+    print(publish_time, publish_timestamp)
     return publish_time, publish_timestamp
 
 
