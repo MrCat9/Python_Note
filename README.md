@@ -397,3 +397,17 @@ Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126
 ```
 
 
+
+
+50_newspaper3k设置useragent_proxies_headers
+
+
+
+
+
+
+
+
+
+
+
