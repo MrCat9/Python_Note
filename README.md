@@ -410,5 +410,13 @@ Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126
 
 
 
+52_装饰器
+
+```
+https://blog.csdn.net/qq_42156420/article/details/81169554
+```
+
+
+
 
 
