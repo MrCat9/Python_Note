@@ -15,28 +15,29 @@
 
 3_从list中取出元素
 
+```
 pop,append,for
+```
 
 
 
 
 4_写文件(w,wb)读文件(r,rb)
 
-w下write()中的变量为str
-
-wb下write()中的变量为byte
-
 ```python
+# w下write()中的变量为str
+
+# wb下write()中的变量为byte
+
 with open("test.json", "w") as f:
         f.write(json_doc)
 ```
 
-
-文件里都是英文的话r,rb都行
-
-文件里有中文的话用r会报错，用rb不会
-
 ```python
+# 文件里都是英文的话r,rb都行
+
+# 文件里有中文的话用r会报错，用rb不会
+
 with open("test.json", "r") as f:
         doc = json.load(f)
 ```
