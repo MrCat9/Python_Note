@@ -1,0 +1,125 @@
+# -*- coding: utf-8 -*-
+
+import re
+import time
+import datetime
+# import requests
+from newspaper import Article
+
+
+def parse_publish_time(html_str):
+    """
+    正则匹配出 html_str 中的 日期时间
+    返回 日期时间 2019-04-13 14:08:15
+    返回 日期时间的时间戳 1555135695
+    :param html_str:
+    :return:
+    """
+    regex_str_list = [
+        {'name': 'all', 'regex_str': r'(\d{4})[ 年/\.-](\d{1,2})[ 月/\.-](\d{1,2})[ 日].*?(\d{1,2})[:：](\d{1,2})[:：](\d{1,2})'},  # 2019/1/1 11:11:11
+        {'name': 'whitout_S', 'regex_str': r'(\d{4})[ 年/\.-](\d{1,2})[ 月/\.-](\d{1,2})[ 日].*?(\d{1,2})[:：](\d{1,2})'},  # 2019/1/1 11:11
+        {'name': 'whitout_Y', 'regex_str': r'(\d{4})[ 年/\.-](\d{1,2})[ 月/\.-](\d{1,2})[ 日].*?(\d{1,2})[:：](\d{1,2})[:：](\d{1,2})'},  # 1/1 11:11:11
+        {'name': 'whitout_Y_S', 'regex_str':  r'(\d{1,2})[ 月/\.-](\d{1,2})[ 日].*?(\d{1,2})[:：](\d{1,2})'},  # 1/1 11:11
+    ]
+
+    now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    publish_time = ''
+
+    for temp in regex_str_list:
+        regex_name = temp['name']
+        regex_str = temp['regex_str']
+        try:
+            re_result = re.search(regex_str, html_str)
+            if re_result:
+                items = re_result.groups()
+                items = list(items)
+
+            # publish_time = True
+            #     try:
+            #         year = re_result.group(1)
+            #         month = re_result.group(2)
+            #         day = re_result.group(3)
+            #         hour = re_result.group(4)
+            #         minute = re_result.group(5)
+            #     except:
+            #         publish_time = False
+            #     try:
+            #         second = re_result.group(6)
+            #     except:
+            #         second = '59'
+            #
+            # if publish_time:
+            #     publish_time = '{}-{}-{} {}:{}:{}'.format(year, month, day, hour, minute, second)
+
+                if regex_name == 'whitout_S':
+                    items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
+                if regex_name == 'whitout_Y':
+                    items.insert(0, now_time.year)  # 没有发布时间的年时，填入年的默认值 当前时间的年
+                if regex_name == 'whitout_Y_S':
+                    items.insert(0, now_time.year)  # 没有发布时间的年时，填入年的默认值 当前时间的年
+                    items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
+
+                # 处理 publish_time 的格式
+                def add_0(num_str):  # 在只有一位数的值前面补个0
+                    if len(num_str) == 1:
+                        return '0' + num_str
+                    else:
+                        return num_str
+                items = list(map(add_0, items))
+
+                publish_time = '{}-{}-{} {}:{}:{}'.format(items[0], items[1], items[2], items[3], items[4], items[5])
+                # print(14 < len(publish_time) < 20)
+                # if 14 < len(publish_time) < 20:
+                if 14 < len(publish_time) < 20 and publish_time <= str(now_time):  # 时间长度正确 且 发布时间不
+                    publish_time = publish_time
+                else:
+                    publish_time = ''
+            else:
+                print('[try match publish_time] match failed, use', '"'+regex_name+'"')
+
+            if publish_time:
+                print(publish_time)
+                break
+        except Exception as e:
+            # print('[Error] wrong datetime format')
+            print('[Error Detail]', str(e))
+            publish_time = int(time.time())
+
+    if not publish_time:
+        print('use now_time as default publish_time')
+        publish_time = now_time
+
+    publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
+    return publish_time, publish_timestamp
+
+
+if __name__ == '__main__':
+    # headers = {
+    #     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36"
+    # }
+
+    # '2019年1月1日'
+    # '2019年01月01日'
+    # '2019/1/1'
+    # '2019/01/01'
+    # '2019.1.1'
+    # '2019.01.01'
+    # '2019-1-1'
+    # '2019-01-01'
+    # 
+    # '    <span class="source ent-source">2019年3月4日，比赛得分1：0</span></div>'
+    # html_str = """<div class="second-title">都说险资这轮“上车”早 看看他们潜伏哪些票？</div>
+    # <div class="date-source" data-sudaclick="content_media_p">
+    #         <span class="date">2019-04-12 8:32:54</span>
+    #     <span class="source ent-source">中国证券网</span></div>
+    #     """
+
+    url = 'http://stock.hexun.com/2019-04-13/196813433.html'
+    news = Article(url, language='zh')
+    news.download()
+    html_str = news.html
+
+    publish_time, publish_timestamp = parse_publish_time(html_str)
+    print('==========main============')
+    print(publish_time, publish_timestamp)
+    print(url)
