@@ -1,0 +1,11 @@
+# 在 \temp_test01.py 下
+news = Article(url, language='zh')
+news.download()  # 按住ctrl，点击 download
+
+# 进入 \Python\Python36\Lib\site-packages\newspaper\article.py
+                html = network.get_html_2XX_only(self.url, self.config)  # 按住ctrl，点击 get_html_2XX_only
+
+# 进入 \Python\Python36\Lib\site-packages\newspaper\network.py
+    response = requests.get(
+        url=url, **get_request_kwargs(timeout, useragent, proxies, headers))
+
