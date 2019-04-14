@@ -24,6 +24,5 @@ pyinstaller test01.py
 ## 编译成.so文件
 
 ```
-https://blog.csdn.net/weixin_44216589/article/details/85203893
+详见 encrypt_src_test
 ```
-
