@@ -402,6 +402,14 @@ Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126
 
 50_newspaper3k设置useragent_proxies_headers
 
+50_2_将外部请求下来的html源码给newspaper解析
+
+可以给外部的请求加 useragent,proxies 等
+
+```
+news.download(input_html=html_str)
+```
+
 
 
 
