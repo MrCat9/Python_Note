@@ -11,6 +11,11 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36"
 }
 
+# url = http://www.httpbin.org/get
+# url = https://www.httpbin.org/get
+# url = http://www.httpbin.org/headers
+# url = http://www.httpbin.org/ip
+
     # 百度
 #     url = "https://www.baidu.com"
     
