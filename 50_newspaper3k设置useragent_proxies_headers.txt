@@ -1,3 +1,4 @@
+# 方案一 修改源码
 # 在 \temp_test01.py 下
 news = Article(url, language='zh')
 news.download()  # 按住ctrl，点击 download
@@ -8,4 +9,30 @@ news.download()  # 按住ctrl，点击 download
 # 进入 \Python\Python36\Lib\site-packages\newspaper\network.py
     response = requests.get(
         url=url, **get_request_kwargs(timeout, useragent, proxies, headers))
+
+
+# ================================================================
+
+# -*- coding: utf-8 -*-
+# 方案二 不使用newspaper的下载，直接给newspaper网页源码
+
+from newspaper import Article
+import requests
+
+url_list = [
+    'http://www.cankaoxiaoxi.com/mil/20190421/2377808.shtml',
+    'http://www.cankaoxiaoxi.com/finance/20190421/2377760.shtml',
+    'http://www.cankaoxiaoxi.com/culture/20190421/2377742.shtml',
+    'http://www.cankaoxiaoxi.com/finance/20190420/2377930.shtml',
+]
+my_url = 'https://www.baidu.com/'
+news = Article(my_url, language='zh')
+for _url in url_list:
+    response = requests.get(url=_url, params={}, headers={}, proxies={}, timeout=10)
+    html_str = response.text
+    # news.download()
+    news.download(input_html=html_str)  # 不用 newspaper 包自带的下载
+    news.parse()
+    title = news.title,  # 新闻标题
+    print(title)
 
