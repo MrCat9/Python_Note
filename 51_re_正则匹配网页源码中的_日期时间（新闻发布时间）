@@ -22,7 +22,9 @@ def parse_publish_time(html_str):
         {'name': 'whitout_Y_S', 'regex_str':  r'(\d{1,2})[ 月/\.-](\d{1,2})[ 日].*?(\d{1,2})[:：](\d{1,2})'},  # 1/1 11:11
     ]
 
-    now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    now_time = datetime.datetime.now()
+    now_time_str = now_time.strftime('%Y-%m-%d %H:%M:%S')
+
     publish_time = ''
 
     for temp in regex_str_list:
@@ -49,14 +51,14 @@ def parse_publish_time(html_str):
             #         second = '59'
             #
             # if publish_time:
-            #     publish_time = '{}-{}-{} {}:{}:{}'.format(year, month, day, hour, minute, second)
+            #     publish_time = '{5}-{4}-{3} {2}:{1}:{0}'.format(year, month, day, hour, minute, second)
 
                 if regex_name == 'whitout_S':
                     items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
                 if regex_name == 'whitout_Y':
-                    items.insert(0, now_time.year)  # 没有发布时间的年时，填入年的默认值 当前时间的年
+                    items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
                 if regex_name == 'whitout_Y_S':
-                    items.insert(0, now_time.year)  # 没有发布时间的年时，填入年的默认值 当前时间的年
+                    items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
                     items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
 
                 # 处理 publish_time 的格式
@@ -70,7 +72,7 @@ def parse_publish_time(html_str):
                 publish_time = '{}-{}-{} {}:{}:{}'.format(items[0], items[1], items[2], items[3], items[4], items[5])
                 # print(14 < len(publish_time) < 20)
                 # if 14 < len(publish_time) < 20:
-                if 14 < len(publish_time) < 20 and publish_time <= str(now_time):  # 时间长度正确 且 发布时间不
+                if 14 < len(publish_time) < 20 and publish_time <= str(now_time_str):  # 时间长度正确 且 发布时间不
                     publish_time = publish_time
                 else:
                     publish_time = ''
@@ -86,7 +88,7 @@ def parse_publish_time(html_str):
 
     if not publish_time:
         print('use now_time as default publish_time')
-        publish_time = now_time
+        publish_time = now_time_str
 
     publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
     print(publish_time, publish_timestamp)
