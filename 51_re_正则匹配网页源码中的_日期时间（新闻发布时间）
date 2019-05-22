@@ -72,7 +72,7 @@ def parse_publish_time(html_str):
                 publish_time = '{}-{}-{} {}:{}:{}'.format(items[0], items[1], items[2], items[3], items[4], items[5])
                 # print(14 < len(publish_time) < 20)
                 # if 14 < len(publish_time) < 20:
-                if 14 < len(publish_time) < 20 and publish_time <= str(now_time_str):  # 时间长度正确 且 发布时间不
+                if 14 < len(publish_time) < 20 and publish_time <= now_time_str:  # 时间长度正确 且 发布时间不晚于当前时间
                     publish_time = publish_time
                 else:
                     publish_time = ''
