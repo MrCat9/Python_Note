@@ -22,8 +22,8 @@ charset = requests.utils.get_encodings_from_content(html_str)  # 从html的meta�
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 '''
 if not charset:
-    charset = response.apparent_encoding  # apparent_encoding 返回真实编码  # 由程序分析出编码
-response.encoding = charset
+    charset = [response.apparent_encoding]  # apparent_encoding 返回真实编码  # 由程序分析出编码
+response.encoding = charset[0]
 html_str = response.text
 # ==============================================================================
 print(html_str)  # 编码后
