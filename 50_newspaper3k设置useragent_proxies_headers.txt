@@ -25,8 +25,8 @@ url_list = [
     'http://www.cankaoxiaoxi.com/culture/20190421/2377742.shtml',
     'http://www.cankaoxiaoxi.com/finance/20190420/2377930.shtml',
 ]
-my_url = 'https://www.baidu.com/'
-news = Article(my_url, language='zh')
+
+news = Article(url='', language='zh')
 for _url in url_list:
     response = requests.get(url=_url, params={}, headers={}, proxies={}, timeout=10)
     html_str = response.text
