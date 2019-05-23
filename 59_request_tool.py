@@ -13,7 +13,7 @@ SELENIUM_IMPLICITLY_WAIT = 10
 REQUESTS_TIMEOUT = 10
 
 
-def selenium_get_url(url, browser=None):
+def selenium_get_url(url, browser=None, random_ua=None, ip_port=None):
     try:
         use_def_browser = False  # 是否使用方法内创建的浏览器
         # 传参时，没有 browser 的话，将使用该方法内部创建的浏览器，将在该方法最后关闭浏览器，不返回 browser
@@ -28,7 +28,21 @@ def selenium_get_url(url, browser=None):
             chrome_options = webdriver.ChromeOptions()
 
             # 设置无界面浏览
-            # chrome_options.set_headless(True)
+            chrome_options.set_headless(True)
+
+            # 设置 user_agent
+            # random_ua = user_agent.random
+            # print(random_ua)
+            if random_ua:
+                chrome_options.add_argument('user-agent={}'.format(random_ua))
+
+            # 设置代理 IP
+            if ip_port:
+                # ip = '114.55.236.62'
+                # port = '3128'
+                ip, port = ip_port
+                chrome_options.add_argument("--proxy-server=http://{0}:{1}".format(ip, port))
+                # 一定要注意，=两边不能有空格，不能是这样--proxy-server = http://202.20.16.82:10152
 
             # 浏览器
             browser = webdriver.Chrome(executable_path=CHROMEDRIVER_EXECUTABLE_PATH, chrome_options=chrome_options)  # chromedriver.exe 的路径
