@@ -38,7 +38,7 @@ re_comment = re.compile('<!--[^>]*-->')  # HTML注释
 html_str = re_comment.sub('', html_str)  # 去掉HTML注释  # 去除单行的注释，且注释中的内容不含>
 print(len(html_str))
 
-re_script = re.compile('<s*script[^>]*>[^<]*<s*/s*scripts*>', re.I)  # 去除单行的 Script
+re_script = re.compile('<s*script[^>]*>[^<]*<s*/s*scripts*>', re.I)  # 去除 Script
 html_str = re_script.sub('', html_str)
 print(len(html_str))
 
