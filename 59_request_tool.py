@@ -3,7 +3,7 @@
 
 from selenium import webdriver
 import requests
-
+import re
 
 from settings import CHROMEDRIVER_EXECUTABLE_PATH, SELENIUM_IMPLICITLY_WAIT
 from settings import REQUESTS_TIMEOUT
@@ -74,7 +74,7 @@ def selenium_init():
     chrome_options = webdriver.ChromeOptions()
 
     # 设置无界面浏览
-    # chrome_options.set_headless(True)
+    chrome_options.set_headless(True)
 
     # 设置 user_agent
     if user_agent:
@@ -132,6 +132,19 @@ def selenium_get_url(url, browser=None):
     finally:
         if browser and use_def_browser:
             browser.quit()
+
+
+def html_str_noise_reduce(html_str):
+    re_comment = re.compile('<!--[^>]*-->')  # HTML注释
+    html_str = re_comment.sub('', html_str)  # 去掉HTML注释  # 去除单行的注释，且注释中的内容不含>
+
+    # re_script = re.compile('<s*script[^>]*>[^<]*<s*/s*scripts*>', re.I)  # 去除 Script
+    # html_str = re_script.sub('', html_str)
+
+    re_style = re.compile('<s*style[^>]*>[^<]*<s*/s*styles*>', re.I)  # style
+    html_str = re_style.sub('', html_str)  # 去掉 style
+
+    return html_str
 
 
 if __name__ == '__main__':
