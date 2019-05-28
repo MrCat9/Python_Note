@@ -84,11 +84,13 @@ def parse_publish_time(html_str):
         except Exception as e:
             # print('[Error] wrong datetime format')
             print('[Error Detail]', str(e))
-            publish_time = int(time.time())
+            publish_time = ''
 
     if not publish_time:
-        print('use now_time as default publish_time')
-        publish_time = now_time_str
+        # print('use now_time as default publish_time')
+        # publish_time = now_time_str
+        print('use 1970-01-01 08:00:00 as default publish_time')
+        publish_time = '1970-01-01 08:00:00'
 
     publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
     print(publish_time, publish_timestamp)
