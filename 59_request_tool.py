@@ -67,7 +67,7 @@ def selenium_init():
     user_agent = None
 
     # 获取随机 代理IP
-    ip_port = None
+    ip_port = (None, None)
 
     # ================================ 浏览器 ================================
     # 设置浏览器
