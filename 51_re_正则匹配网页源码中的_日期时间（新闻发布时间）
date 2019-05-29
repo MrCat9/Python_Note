@@ -36,23 +36,6 @@ def parse_publish_time(html_str):
                 items = re_result.groups()
                 items = list(items)
 
-            # publish_time = True
-            #     try:
-            #         year = re_result.group(1)
-            #         month = re_result.group(2)
-            #         day = re_result.group(3)
-            #         hour = re_result.group(4)
-            #         minute = re_result.group(5)
-            #     except:
-            #         publish_time = False
-            #     try:
-            #         second = re_result.group(6)
-            #     except:
-            #         second = '59'
-            #
-            # if publish_time:
-            #     publish_time = '{5}-{4}-{3} {2}:{1}:{0}'.format(year, month, day, hour, minute, second)
-
                 if regex_name == 'whitout_S':
                     items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
                 if regex_name == 'whitout_Y':
