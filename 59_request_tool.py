@@ -67,24 +67,23 @@ def selenium_init():
     user_agent = None
 
     # 获取随机 代理IP
-    ip_port = (None, None)
+    # ip, port = ('114.55.236.62', '3128')
+    ip, port = (None, None)
 
     # ================================ 浏览器 ================================
     # 设置浏览器
     chrome_options = webdriver.ChromeOptions()
 
     # 设置无界面浏览
-    chrome_options.set_headless(True)
+    # chrome_options.set_headless(True)
+    chrome_options.add_argument('--headless')    
 
     # 设置 user_agent
     if user_agent:
         chrome_options.add_argument('user-agent={}'.format(user_agent))
 
     # 设置代理 IP
-    if ip_port:
-        # ip = '114.55.236.62'
-        # port = '3128'
-        ip, port = ip_port
+    if ip and port:
         chrome_options.add_argument("--proxy-server=http://{0}:{1}".format(ip, port))
         # 一定要注意，=两边不能有空格，不能是这样--proxy-server = http://202.20.16.82:10152
 
