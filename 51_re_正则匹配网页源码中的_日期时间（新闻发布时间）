@@ -89,8 +89,12 @@ def parse_publish_time(html_str):
     if not publish_time:
         # print('use now_time as default publish_time')
         # publish_time = now_time_str
-        print('use 1970-01-01 08:00:00 as default publish_time')
-        publish_time = '1970-01-01 08:00:00'
+        print("use '' as default publish_time")
+        publish_time = ''
+        publish_timestamp = ''
+
+        print(publish_time, publish_timestamp)
+        return publish_time, publish_timestamp
 
     if publish_time >= '1970-01-01 08:00:00':
         publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
