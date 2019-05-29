@@ -92,7 +92,11 @@ def parse_publish_time(html_str):
         print('use 1970-01-01 08:00:00 as default publish_time')
         publish_time = '1970-01-01 08:00:00'
 
-    publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
+    if publish_time >= '1970-01-01 08:00:00':
+        publish_timestamp = int(time.mktime(time.strptime(publish_time, '%Y-%m-%d %H:%M:%S')))
+    else:
+        publish_timestamp = -1
+        
     print(publish_time, publish_timestamp)
     return publish_time, publish_timestamp
 
