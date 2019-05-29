@@ -9,7 +9,7 @@ from newspaper import Article
 
 def parse_publish_time(html_str):
     """
-    正则匹配出 html_str 中的 日期时间
+    正则匹配出 html_str 中的 日期时间（日期与时间之间的间隔小于20个字符）
     返回 日期时间 2019-04-13 14:08:15
     返回 日期时间的时间戳 1555135695
     :param html_str:
