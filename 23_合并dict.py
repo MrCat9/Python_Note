@@ -2,13 +2,13 @@
 
 if __name__ == '__main__':
     data1 = {
-        'name': "name",
-        'number': "number",
+        'name': 'name',
+        'number': 'number',
     }
-
+    
     data2 = {
-        "price": "price",
-        "amount": "amount"
+        'price': 'price',
+        'amount': 'amount',
     }
 
     data12 = dict(data1, **data2)
@@ -17,8 +17,12 @@ if __name__ == '__main__':
     print(data2)
     print(data12)
 
-"""
-{'name': 'name', 'number': 'number'}
-{'price': 'price', 'amount': 'amount'}
-{'name': 'name', 'number': 'number', 'price': 'price', 'amount': 'amount'}
-"""
+    """
+    {'name': 'name', 'number': 'number'}
+    {'price': 'price', 'amount': 'amount'}
+    {'name': 'name', 'number': 'number', 'price': 'price', 'amount': 'amount'}
+    """
+
+    data1.update(data2)
+    print(data1)  # {'name': 'name', 'number': 'number', 'price': 'price', 'amount': 'amount'}
+
