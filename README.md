@@ -510,7 +510,9 @@ https://www.cnblogs.com/wangbin2188/p/6532510.html
 63_map_reduce_方法
 
 ```
-map()  reduce()
+from functools import reduce
+map()
+reduce()
 https://www.liaoxuefeng.com/wiki/897692888725344/989703124920288
 ```
 
