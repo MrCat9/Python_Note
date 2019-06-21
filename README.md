@@ -531,6 +531,11 @@ collections是Python内建的一个集合模块，提供了许多有用的集合
 https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456
 
 模块内有 tuple list dict 的子类，当原来的 tuple list dict 不好用的时候可以试试
+
+namedtuple  可命名的 tuple
+deque  高效实现插入和删除操作的双向列表
+defaultdict  带默认值的dict，引用不存在的key时返回默认值，不会报错
+OrderedDict  有序的dict
 Counter 计数器
 ```
 
