@@ -523,3 +523,14 @@ https://www.liaoxuefeng.com/wiki/897692888725344/989703124920288
 
 
 
+
+64_collections
+
+```
+collections是Python内建的一个集合模块，提供了许多有用的集合类。
+https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456
+
+模块内有 tuple list dict 的子类，当原来的 tuple list dict 不好用的时候可以试试
+Counter 计数器
+```
+
