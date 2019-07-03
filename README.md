@@ -104,6 +104,10 @@ with open("test.json", "r") as f:
 
 13_3_用xpath去除所有html标签，保留标签里面的内容
 
+```
+xpath 效果比 re 好
+```
+
 
 
 
