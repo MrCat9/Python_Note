@@ -102,6 +102,11 @@ with open("test.json", "r") as f:
 
 
 
+13_3_用xpath去除所有html标签，保留标签里面的内容
+
+
+
+
 14_re报错bad character range
 
 
