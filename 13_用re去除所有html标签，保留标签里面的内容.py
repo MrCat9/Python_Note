@@ -4,7 +4,8 @@
 # https://blog.csdn.net/weixin_41972401/article/details/79991591
 
 import re
-html='<a href="//www.jb51.net">脚本之家</a>,Python学习！'
-dr = re.compile(r'<[^>]+>',re.S)
-dd = dr.sub('',html)
-print(dd)    # 脚本之家,Python学习！
+
+html = '<a href="//www.jb51.net">脚本之家</a>,Python学习！'
+dr = re.compile(r'<[^>]+>', re.S)
+dd = dr.sub('', html)
+print(dd)  # 脚本之家,Python学习！
