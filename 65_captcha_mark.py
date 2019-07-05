@@ -6,6 +6,7 @@ import requests
 # import time
 from PIL import Image
 import matplotlib.pyplot as plt
+import os
 import shutil
 import datetime
 
@@ -43,5 +44,6 @@ if __name__ == '__main__':
 
         # ======== 文件重命名 ========
         time_str = str(datetime.datetime.now().strftime('%Yy%mm%dd_%Hh%Mm%Ss'))
-        shutil.copy('png_data/temp.png', 'png_data/{}__{}.png'.format(name, time_str))
+        os.rename('png_data/temp.png', 'png_data/{}__{}.png'.format(name, time_str))
         # ============================
+
