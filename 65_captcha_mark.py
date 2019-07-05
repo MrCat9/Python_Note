@@ -17,6 +17,11 @@ headers = {
 
 
 if __name__ == '__main__':
+    try:
+        os.mkdir('png_data')  # 创建单个目录
+    except Exception as e:
+        print(str(e))
+
     url = ''
     for i in range(1000):
         print(i)
