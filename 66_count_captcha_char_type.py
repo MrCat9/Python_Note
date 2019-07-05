@@ -28,7 +28,7 @@ if __name__ == '__main__':
     print(len(counter))
 
     for k, v in counter.items():
-        print(k, '\t', v)
+        print(str(k)+'\t'+str(v))
 
     # for k in counter.keys():
     #     print(k)
