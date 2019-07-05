@@ -7,7 +7,6 @@ import requests
 from PIL import Image
 import matplotlib.pyplot as plt
 import os
-import shutil
 import datetime
 
 
