@@ -13,10 +13,10 @@ if __name__ == '__main__':
     images_list = os.listdir(dir_path)
     # print(images_list)
     for image_name in images_list:
-        
+
         # captcha = image_name.replace('.png', '')  # 取出文件名中的验证码
         captcha = image_name.split('__')[0]  # 取出文件名中的验证码
-        
+
         all_captcha_str += captcha
     # print(all_captcha_str)
 
@@ -27,8 +27,8 @@ if __name__ == '__main__':
     print(counter)
     print(len(counter))
 
-    # for k, v in counter.items():
-    #     print(k, v)
+    for k, v in counter.items():
+        print(k, '\t', v)
 
     # for k in counter.keys():
     #     print(k)
