@@ -568,3 +568,11 @@ https://blog.csdn.net/lxy210781/article/details/81176687
 ```
 
 
+
+
+68_向python程序里传参数
+
+
+
+
+69_
