@@ -15,7 +15,7 @@ if __name__ == '__main__':
     for image_name in images_list:
 
         # captcha = image_name.replace('.png', '')  # 取出文件名中的验证码
-        captcha = image_name.split('__')[0]  # 取出文件名中的验证码
+        captcha = image_name.split('__')[1]  # 取出文件名中的验证码
 
         all_captcha_str += captcha
     # print(all_captcha_str)
