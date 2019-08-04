@@ -43,11 +43,12 @@ if __name__ == '__main__':
         # ==========================
 
         # ======== 输入验证码 ========
-        name = input('输入验证码：')
+        label = input('输入验证码：')
         # ============================
 
         # ======== 文件重命名 ========
         time_str = str(datetime.datetime.now().strftime('%Yy%mm%dd_%Hh%Mm%Ss'))
-        os.rename('png_data/temp.png', 'png_data/{}__{}.png'.format(name, time_str))
+        os.rename('png_data/temp.png', 'png_data/{}__{}__{}.png'.format(time_str, label, str(i)))
+        # 'datetime__label__id.png'
         # ============================
 
