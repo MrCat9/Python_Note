@@ -342,6 +342,20 @@ https://blog.csdn.net/SL_World/article/details/86691747
 greenlet
 eventlet
 gevent
+
+Python协程
+https://zhu327.github.io/2016/06/16/python%E5%8D%8F%E7%A8%8B/
+
+Python eventlet 模块笔记
+https://blog.csdn.net/u010827484/article/details/81223035
+
+class eventlet.Timeout 可以向任何东西添加超时，在 timeout 秒后抛出异常
+
+廖雪峰 gevent
+https://www.liaoxuefeng.com/wiki/897692888725344/966405998508320
+
+gevent 官网
+http://www.gevent.org/index.html
 ```
 
 
