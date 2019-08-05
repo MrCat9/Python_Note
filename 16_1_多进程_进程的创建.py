@@ -22,6 +22,8 @@ if __name__ == '__main__':
     p.start()
     # join()方法可以等待子进程结束后再继续往下运行，通常用于进程间的同步。
     # p.join()
+    # p.join(timeout=3)  # 可以设置超时时间，超过超时时间子进程还未结束的话也将回到父进程，继续执行父进程下面的代码，但子进程还在后台运行
+    # p.terminate()  # 结束子进程
     print('Child process end.')
 
 
