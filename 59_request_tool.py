@@ -4,6 +4,8 @@
 from selenium import webdriver
 import requests
 import re
+import eventlet
+import time
 
 from settings import CHROMEDRIVER_EXECUTABLE_PATH, SELENIUM_IMPLICITLY_WAIT
 from settings import REQUESTS_TIMEOUT
@@ -44,8 +46,15 @@ def requests_get_url(url):
     # =================================================================================================
 
     # ================================ 请求网页 ================================
-    response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
-    html_str = response.text
+    # response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
+    # html_str = response.text
+    eventlet.monkey_patch()
+    try:
+        with eventlet.Timeout(timeout * 2):  # 限制网页请求和源码计算的总时长
+            response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
+            html_str = response.text
+    except:
+        print('[eventlet.Timeout]', url)
     # ==========================================================================
 
     # ================================ 设置网页编码 ================================
@@ -112,6 +121,7 @@ def selenium_get_url(url, browser=None):
 
         # 请求网页
         browser.get(url)
+        time.sleep(3)  # 等待网页加载  # 考虑用url数量动态判断等待时长
 
         # # 切换到新打开的页面
         # current_window = browser.current_window_handle
