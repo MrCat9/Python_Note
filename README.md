@@ -600,4 +600,12 @@ https://blog.csdn.net/lxy210781/article/details/81176687
 
 
 
-69_
+69_设置最大递归深度
+
+```
+python 最大递归次数 RuntimeError: maximum recursion depth exceeded
+https://blog.csdn.net/tangwenbo124/article/details/72822692
+
+import sys
+sys.setrecursionlimit(10000)  # set the maximum depth as 10000
+```
