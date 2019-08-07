@@ -6,6 +6,7 @@ import requests
 import re
 import eventlet
 import time
+from datetime import datetime
 
 from settings import CHROMEDRIVER_EXECUTABLE_PATH, SELENIUM_IMPLICITLY_WAIT
 from settings import REQUESTS_TIMEOUT
@@ -54,7 +55,7 @@ def requests_get_url(url):
             response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
             html_str = response.text
     except:
-        print('[eventlet.Timeout]', url)
+        print('[eventlet.Timeout][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg='', url=url))
     # ==========================================================================
 
     # ================================ 设置网页编码 ================================
@@ -137,7 +138,7 @@ def selenium_get_url(url, browser=None):
         else:
             return html_str
     except Exception as e:
-        print(str(e))
+        print('[error][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg=str(e), url=url))
     finally:
         if browser and use_def_browser:
             browser.quit()
