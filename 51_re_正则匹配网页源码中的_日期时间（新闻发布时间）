@@ -74,7 +74,7 @@ def parse_publish_time(html_str):
                 break
         except Exception as e:
             # print('[Error] wrong datetime format')
-            print('[error][parse_publish_time][{now_time}][msg:{msg}]'.format(now_time=str(datetime.now()), msg=str(e)))
+            print('[error][parse_publish_time][', datetime.now(), '][msg:', str(e), ']')
             publish_time = ''
 
     if not publish_time:
