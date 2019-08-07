@@ -56,6 +56,8 @@ def requests_get_url(url):
             html_str = response.text
     except:
         print('[eventlet.Timeout][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg='', url=url))
+    if not response or not html_str:
+        raise Exception('eventlet.Timeout')
     # ==========================================================================
 
     # ================================ 设置网页编码 ================================
