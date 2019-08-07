@@ -2,7 +2,7 @@
 
 import re
 import time
-import datetime
+from datetime import datetime
 # import requests
 from newspaper import Article
 
@@ -22,7 +22,7 @@ def parse_publish_time(html_str):
         {'name': 'whitout_Y_S', 'regex_str':  r'(\d{1,2})[ 月/\.-](\d{1,2})[ 日].{0,20}?(\d{1,2})[:：](\d{1,2})'},  # 1/1 11:11
     ]
 
-    now_time = datetime.datetime.now()
+    now_time = datetime.now()
     now_time_str = now_time.strftime('%Y-%m-%d %H:%M:%S')
 
     publish_time = ''
@@ -74,7 +74,7 @@ def parse_publish_time(html_str):
                 break
         except Exception as e:
             # print('[Error] wrong datetime format')
-            print('[Error Detail]', str(e))
+            print('[error][parse_publish_time][{now_time}][msg:{msg}]'.format(now_time=str(datetime.now()), msg=str(e)))
             publish_time = ''
 
     if not publish_time:
