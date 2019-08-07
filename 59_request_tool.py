@@ -55,7 +55,7 @@ def requests_get_url(url):
             response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
             html_str = response.text
     except:
-        print('[eventlet.Timeout][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg='', url=url))
+        print('[eventlet.Timeout][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg='', url=str(url)))
     if not response or not html_str:
         raise Exception('eventlet.Timeout')
     # ==========================================================================
@@ -140,7 +140,7 @@ def selenium_get_url(url, browser=None):
         else:
             return html_str
     except Exception as e:
-        print('[error][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg=str(e), url=url))
+        print('[error][request_tool][{now_time}][msg:{msg}][url:{url}]'.format(now_time=str(datetime.now()), msg=str(e), url=str(url)))
     finally:
         if browser and use_def_browser:
             browser.quit()
