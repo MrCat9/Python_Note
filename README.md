@@ -619,3 +619,15 @@ sys.setrecursionlimit(10000)  # set the maximum depth as 10000
 对于pip安装不了的包可以考虑用whl安装
 https://www.lfd.uci.edu/~gohlke/pythonlibs/
 ```
+
+
+
+
+71_requirements
+
+```
+requirements.txt 可以同时 pip install 多个包
+
+python requirements.txt使用
+https://www.jianshu.com/p/9402a6818f86
+```
