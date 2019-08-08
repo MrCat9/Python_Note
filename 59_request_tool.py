@@ -131,7 +131,8 @@ def requests_get_url(url):
 
 def selenium_init():
     # 获取随机 UA头
-    user_agent = None
+    # user_agent = None
+    user_agent = random.choice(ua_list)
 
     # 获取随机 代理IP
     # ip, port = ('114.55.236.62', '3128')
