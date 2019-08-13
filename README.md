@@ -1,5 +1,7 @@
 # python_notes 记录一些有关python的笔记
 
+python 文档 https://docs.python.org/3.6/index.html
+
 
 
 
