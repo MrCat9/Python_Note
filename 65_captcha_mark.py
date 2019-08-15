@@ -36,9 +36,9 @@ if __name__ == '__main__':
         # ==========================
 
         # ======== 显示图片 ========
-        img = Image.open('png_data/temp.png')
+        im = Image.open('png_data/temp.png')
         plt.figure('temp')
-        plt.imshow(img)
+        plt.imshow(im)
         plt.show()
         # ==========================
 
