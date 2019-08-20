@@ -637,8 +637,21 @@ https://www.jianshu.com/p/9402a6818f86
 
 
 
-71_四舍五入
+72_四舍五入
 
 ```
 https://www.cnblogs.com/xieqiankun/p/the_truth_of_round.html
 ```
+
+
+
+
+73_hashlib_摘要算法
+
+```
+MD5  SHA1
+https://www.liaoxuefeng.com/wiki/897692888725344/923057313018752
+```
+
+
+
