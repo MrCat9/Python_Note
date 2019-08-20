@@ -14,4 +14,4 @@ def get_md5(url):  # MD5摘要生成
 
 if __name__ == '__main__':
     md5 = get_md5('123')
-    print(md5)
+    print(md5)  # 202cb962ac59075b964b07152d234b70
