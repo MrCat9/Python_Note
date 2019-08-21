@@ -15,6 +15,7 @@ from settings import REQUESTS_TIMEOUT
 
 # # selenium
 # CHROMEDRIVER_EXECUTABLE_PATH = 'F:/chromedriver_win32/chromedriver.exe'
+# FIREFOXDRIVER_EXECUTABLE_PATH = 'F:/geckodriver-v0.24.0-win64/geckodriver.exe'
 # SELENIUM_IMPLICITLY_WAIT = 10
 #
 # # requests
