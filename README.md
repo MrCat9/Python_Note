@@ -655,3 +655,9 @@ https://www.liaoxuefeng.com/wiki/897692888725344/923057313018752
 
 
 
+
+74_twisted与deferred对象
+
+```
+https://www.cnblogs.com/xianguang/p/7027661.html
+```
