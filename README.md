@@ -407,6 +407,10 @@ F:\mongodb\bin
 
 46_python去除字符串中的\x20_\xa0_\t_\n
 
+```
+75_w3lib 更好用
+```
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -674,5 +678,17 @@ html Module
 http Module
 url Module
 去除html标签  去除空格，换行符，制表符  网页降噪
+```
+
+```python
+import w3lib.html
+
+html_str = w3lib.html.remove_comments(html_str)
+# html_str = w3lib.html.remove_tags(html_str, which_ones=('style', ))  # 去除 style 标签
+html_str = w3lib.html.remove_tags_with_content(html_str, which_ones=('style', ))  # 去除 style 标签及其内容
+
+str1 = '你好\x20啊\xa0啊\t啊\n啊'
+str1 = w3lib.html.replace_escape_chars(str1, which_ones=('\n', '\t', '\r', '\x20', '\xa0'), replace_by='/')
+print(str1)  # 你好/啊/啊/啊/啊
 ```
 
