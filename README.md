@@ -96,6 +96,10 @@ with open("test.json", "r") as f:
 
 13_用re去除所有html标签，保留标签里面的内容
 
+```
+75_w3lib 比 re 好用
+```
+
 
 
 
@@ -520,6 +524,10 @@ http://tushare.org/
 
 
 58_re（正则表达式）去除部分html标签
+
+```
+75_w3lib 更好用
+```
 
 
 
