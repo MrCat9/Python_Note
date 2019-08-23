@@ -673,6 +673,6 @@ encoding Module
 html Module
 http Module
 url Module
-去除html标签  网页降噪
+去除html标签  去除空格，换行符，制表符  网页降噪
 ```
 
