@@ -204,14 +204,17 @@ def selenium_get_url(url, browser=None):
 
 
 def html_str_noise_reduce(html_str):
-    re_comment = re.compile('<!--[^>]*-->')  # HTML注释
-    html_str = re_comment.sub('', html_str)  # 去掉HTML注释  # 去除单行的注释，且注释中的内容不含>
+    # re_comment = re.compile('<!--[^>]*-->')  # HTML注释
+    # html_str = re_comment.sub('', html_str)  # 去除HTML注释  # 去除单行的注释，且注释中的内容不含>
 
-    # re_script = re.compile('<s*script[^>]*>[^<]*<s*/s*scripts*>', re.I)  # 去除 Script
+    # re_script = re.compile('<s*script[^>]*>[^<]*<s*/s*scripts*>', re.I)  # 去除 script 标签及其内容
     # html_str = re_script.sub('', html_str)
 
-    re_style = re.compile('<s*style[^>]*>[^<]*<s*/s*styles*>', re.I)  # style
-    html_str = re_style.sub('', html_str)  # 去掉 style
+    # re_style = re.compile('<s*style[^>]*>[^<]*<s*/s*styles*>', re.I)  # style
+    # html_str = re_style.sub('', html_str)  # 去除 style
+
+    html_str = w3lib.html.remove_comments(html_str)  # 去除注释
+    html_str = w3lib.html.remove_tags_with_content(html_str, which_ones=('style',))  # 去除 style 标签及其内容
 
     return html_str
 
@@ -224,5 +227,6 @@ if __name__ == '__main__':
     html_str = selenium_get_url(url)  # selenium 使用内部浏览器
     # html_str = selenium_get_url(url, browser)  # selenium 使用外部浏览器
     # browser.quit()
+    html_str = html_str_noise_reduce(html_str)
     print(html_str)
 
