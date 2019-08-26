@@ -133,13 +133,15 @@ str1 = str1.replace("'", "''")
 
 父进程所有Python对象都必须通过pickle序列化再传到子进程去，所以，如果multiprocessing在Windows下调用失败了，要先考虑是不是pickle失败了。
 
-16_8多进程_多线程补充
+16_8_多进程_多线程补充
 ```
 多进程(multiprocessing)  https://www.cnblogs.com/smallmars/p/7093603.html
 多线程(threading)  https://www.cnblogs.com/smallmars/p/7149507.html
 多CPU，多核，多进程，多线程  http://www.cnblogs.com/csfeng/p/8670704.html
 GIL全局锁  https://www.cnblogs.com/hukey/p/7263207.html
 ```
+
+16_9_用子进程开进程池
 
 
 
