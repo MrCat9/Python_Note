@@ -3,7 +3,7 @@
 import pyperclip  # python 操作剪切板
 from selenium import webdriver
 # import time
-import os
+# import os
 
 
 # pyperclip.copy('aaa')  # 向剪切板写入 aaa
@@ -20,9 +20,9 @@ browser.get(url)
 browser.find_element_by_css_selector('input[id="kw"]').send_keys(clipboard_str)  # 输入
 browser.find_element_by_css_selector('input[id="su"]').click()  # 点击
 # time.sleep(10)
-# browser.close()
+browser.quit()
 
-print('结束进程 IEDriverServer.exe')
-os.system('taskkill /im IEDriverServer.exe /f')  # 结束进程 (python执行cmd)
+# print('结束进程 IEDriverServer.exe')
+# os.system('taskkill /im IEDriverServer.exe /f')  # 结束进程 (python执行cmd)
 # /im : 根据进程名
 # /f : 强制结束
