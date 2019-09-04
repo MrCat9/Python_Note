@@ -260,6 +260,9 @@ if __name__ == '__main__':
 
 
 32_发送邮件
+```
+https://blog.csdn.net/qq_20417499/article/details/80566265
+```
 
 
 
