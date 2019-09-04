@@ -23,11 +23,13 @@ message['Subject'] = Header(subject)
 content1 = MIMEText('我的正文。。。', 'plain', 'utf-8')
 message.attach(content1)
 
+# 添加 excel 附件
 excel_path = 'test_excel.xls'
 excel_attachment = MIMEApplication(open(excel_path, 'rb').read())
 excel_attachment.add_header('Content-Disposition', 'attachment', filename=excel_path)
 message.attach(excel_attachment)
 
+# 添加 log 附件
 log_path = 'test_log.log'
 log_attachment = MIMEApplication(open(log_path, 'rb').read())
 log_attachment.add_header('Content-Disposition', 'attachment', filename=log_path)
