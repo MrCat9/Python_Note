@@ -542,7 +542,7 @@ http://tushare.org/
 
 
 
-[59_request_tool](https://github.com/MrCat9/Python_Note/blob/master/59_request_tool.py)
+[59_request_tool](https://github.com/MrCat9/Python_Note/blob/master/request_tool.py)
 
 ```
 包括 selenium 和 requests 两种get url的方法
