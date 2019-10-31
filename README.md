@@ -693,9 +693,8 @@ https://www.cnblogs.com/xianguang/p/7027661.html
 
 
 75_w3lib
-
+[https://w3lib.readthedocs.io/en/latest/w3lib.html](https://w3lib.readthedocs.io/en/latest/w3lib.html)
 ```
-https://w3lib.readthedocs.io/en/latest/w3lib.html
 encoding Module
 html Module
 http Module
