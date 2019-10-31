@@ -692,7 +692,7 @@ https://www.cnblogs.com/xianguang/p/7027661.html
 
 
 
-75_w3lib
+[75_w3lib](https://github.com/MrCat9/Python_Note/blob/master/w3lib_test.py)
 
 w3lib库文档 https://w3lib.readthedocs.io/en/latest/w3lib.html
 
