@@ -693,24 +693,14 @@ https://www.cnblogs.com/xianguang/p/7027661.html
 
 
 75_w3lib
-[https://w3lib.readthedocs.io/en/latest/w3lib.html](https://w3lib.readthedocs.io/en/latest/w3lib.html)
+
+w3lib库文档 https://w3lib.readthedocs.io/en/latest/w3lib.html
+
 ```
 encoding Module
 html Module
 http Module
 url Module
-去除html标签  去除空格，换行符，制表符  网页降噪
-```
-
-```python
-import w3lib.html
-
-html_str = w3lib.html.remove_comments(html_str)  # 去除注释
-# html_str = w3lib.html.remove_tags(html_str, which_ones=('style', ))  # 去除 style 标签
-html_str = w3lib.html.remove_tags_with_content(html_str, which_ones=('style', ))  # 去除 style 标签及其内容
-
-str1 = '你好\x20啊\xa0啊\t啊\n啊'
-str1 = w3lib.html.replace_escape_chars(str1, which_ones=('\n', '\t', '\r', '\x20', '\xa0'), replace_by='/')
-print(str1)  # 你好/啊/啊/啊/啊
+去除html标签  去除空格，换行符，制表符  去除html实体（如：&nbsp; &rdquo; &mdash; 等）  网页降噪
 ```
 
