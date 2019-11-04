@@ -8,6 +8,7 @@ import eventlet
 import time
 from datetime import datetime
 import random
+import w3lib.html
 
 from settings import CHROMEDRIVER_EXECUTABLE_PATH, SELENIUM_IMPLICITLY_WAIT
 from settings import REQUESTS_TIMEOUT
