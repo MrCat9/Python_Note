@@ -600,7 +600,7 @@ Counter 计数器
 
 
 
-65_验证码手动标记
+[65_验证码手动标记](https://github.com/MrCat9/Python_Note/blob/master/captcha_mark.py)
 
 
 
