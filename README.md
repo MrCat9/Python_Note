@@ -711,3 +711,13 @@ url Module
 
 Python(phone)模块获取手机号归属地、区号、运营商等 https://www.cnblogs.com/yaoqian/p/9358107.html
 
+
+
+
+77_pipenv
+
+https://www.jianshu.com/p/d08a4aa0008e
+
+
+
+
