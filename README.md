@@ -551,12 +551,12 @@ http://tushare.org/
 
 
 
-60_itertools_排列组合
+#### 60_itertools_排列组合
 
 
 
 
-61_列表list和字典dict的迭代
+#### 61_列表list和字典dict的迭代
 
 ```
 https://www.cnblogs.com/wangbin2188/p/6532510.html
@@ -565,12 +565,12 @@ https://www.cnblogs.com/wangbin2188/p/6532510.html
 
 
 
-62_list排序
+#### 62_list排序
 
 
 
 
-63_map_reduce_方法
+#### 63_map_reduce_方法
 
 ```
 from functools import reduce
@@ -582,7 +582,7 @@ https://www.liaoxuefeng.com/wiki/897692888725344/989703124920288
 
 
 
-64_collections
+#### 64_collections
 
 ```
 collections是Python内建的一个集合模块，提供了许多有用的集合类。
@@ -600,17 +600,17 @@ Counter 计数器
 
 
 
-[65_验证码手动标记](https://github.com/MrCat9/Python_Note/blob/master/captcha_mark.py)
+#### [65_验证码手动标记](https://github.com/MrCat9/Python_Note/blob/master/captcha_mark.py)
 
 
 
 
-66_验证码字符种类统计
+#### 66_验证码字符种类统计
 
 
 
 
-67_with
+#### 67_with
 
 ```
 https://blog.csdn.net/lxy210781/article/details/81176687
@@ -619,12 +619,12 @@ https://blog.csdn.net/lxy210781/article/details/81176687
 
 
 
-68_向python程序里传参数
+#### 68_向python程序里传参数
 
 
 
 
-69_设置最大递归深度
+#### 69_设置最大递归深度
 
 ```
 python 最大递归次数 RuntimeError: maximum recursion depth exceeded
