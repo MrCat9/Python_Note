@@ -637,7 +637,7 @@ sys.setrecursionlimit(10000)  # set the maximum depth as 10000
 
 
 
-70_python_whl
+#### 70_python_whl
 
 ```
 对于pip安装不了的包可以考虑用whl安装
@@ -647,7 +647,7 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 
 
-71_requirements
+#### 71_requirements
 
 ```
 requirements.txt 可以同时 pip install 多个包
@@ -664,7 +664,7 @@ pip install -r requirements.txt
 
 
 
-72_四舍五入
+#### 72_四舍五入
 
 ```
 https://www.cnblogs.com/xieqiankun/p/the_truth_of_round.html
@@ -673,7 +673,7 @@ https://www.cnblogs.com/xieqiankun/p/the_truth_of_round.html
 
 
 
-73_hashlib_摘要算法
+#### 73_hashlib_摘要算法
 
 ```
 MD5  SHA1
@@ -683,7 +683,7 @@ https://www.liaoxuefeng.com/wiki/897692888725344/923057313018752
 
 
 
-74_twisted与deferred对象
+#### 74_twisted与deferred对象
 
 ```
 https://www.cnblogs.com/xianguang/p/7027661.html
@@ -692,7 +692,7 @@ https://www.cnblogs.com/xianguang/p/7027661.html
 
 
 
-[75_w3lib](https://github.com/MrCat9/Python_Note/blob/master/w3lib_test.py)
+#### [75_w3lib](https://github.com/MrCat9/Python_Note/blob/master/w3lib_test.py)
 
 w3lib库文档 https://w3lib.readthedocs.io/en/latest/w3lib.html
 
@@ -707,14 +707,14 @@ url Module
 
 
 
-76_phone库
+#### 76_phone库
 
 Python(phone)模块获取手机号归属地、区号、运营商等 https://www.cnblogs.com/yaoqian/p/9358107.html
 
 
 
 
-77_pipenv
+#### 77_pipenv
 
 https://www.jianshu.com/p/d08a4aa0008e
 
