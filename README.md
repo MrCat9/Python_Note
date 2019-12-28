@@ -732,6 +732,13 @@ imageio.mimsave  # 保存gif，输入也是一个list数组
 
 
 
+#### 79_PIL.Image和np.ndarray图片与Tensor之间的转换
+
+https://blog.csdn.net/tsq292978891/article/details/78767326
+
+
+
+
 #### 79_dlib
 
 人脸识别之Python DLib库进行人脸关键点识别 https://www.cnblogs.com/raorao1994/p/11001755.html
