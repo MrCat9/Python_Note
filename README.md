@@ -717,11 +717,22 @@ Python(phone)模块获取手机号归属地、区号、运营商等 https://www.
 #### 77_pipenv
 
 https://www.jianshu.com/p/d08a4aa0008e
+        
+
+
+
+#### 78_操作gif图
+
+```
+# 使用模块 imageio
+imageio.mimread  # 读取gif，每一帧会存放到list的一个位置中
+imageio.mimsave  # 保存gif，输入也是一个list数组
+```
 
 
 
 
-#### 78_dlib
+#### 79_dlib
 
 人脸识别之Python DLib库进行人脸关键点识别 https://www.cnblogs.com/raorao1994/p/11001755.html
 
