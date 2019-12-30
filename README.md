@@ -639,10 +639,11 @@ sys.setrecursionlimit(10000)  # set the maximum depth as 10000
 
 #### 70_python_whl
 
-```
 对于pip安装不了的包可以考虑用whl安装
+
+https://pypi.org/simple/
+
 https://www.lfd.uci.edu/~gohlke/pythonlibs/
-```
 
 
 
