@@ -742,6 +742,11 @@ https://blog.csdn.net/tsq292978891/article/details/78767326
 
 #### 79_dlib
 
+```
+安装
+pip install xxx.whl
+```
+
 dlib 官网 http://dlib.net/
 
 人脸识别之Python DLib库进行人脸关键点识别 https://www.cnblogs.com/raorao1994/p/11001755.html
