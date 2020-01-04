@@ -768,7 +768,15 @@ https://blog.csdn.net/baozhourui/article/details/88058450
 
 
 
-#### 82_
+#### 82_selenium打开本地的html文件
+
+```python
+browser = webdriver.Chrome()
+browser.get('file:///'+os.path.abspath('test.html'))  # os.path.abspath()方法可以获取文件的绝对路径
+```
 
 
 
+
+#### 83_让IE浏览器运行js时，不再提示“允许阻止内容”
+https://blog.csdn.net/u010682330/article/details/77531028
