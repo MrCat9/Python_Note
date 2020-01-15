@@ -584,9 +584,10 @@ https://www.liaoxuefeng.com/wiki/897692888725344/989703124920288
 
 #### 64_collections
 
+https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456
+
 ```
 collections是Python内建的一个集合模块，提供了许多有用的集合类。
-https://www.liaoxuefeng.com/wiki/897692888725344/973805065315456
 
 模块内有 tuple list dict 的子类，当原来的 tuple list dict 不好用的时候可以试试
 
@@ -596,6 +597,8 @@ defaultdict  带默认值的dict，引用不存在的key时返回默认值，不
 OrderedDict  有序的dict
 Counter 计数器
 ```
+
+#### [64_2_使用Counter统计list中每种元素的个数](https://github.com/MrCat9/Python_Note/blob/master/list_element_count.py)
 
 
 
