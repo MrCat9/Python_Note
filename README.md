@@ -746,8 +746,11 @@ https://blog.csdn.net/tsq292978891/article/details/78767326
 #### 79_dlib
 
 ```
-安装
+Windows下安装
 pip install xxx.whl
+
+Linux下安装
+pip install dlib
 ```
 
 dlib 官网 http://dlib.net/
