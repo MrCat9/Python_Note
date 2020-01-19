@@ -827,3 +827,24 @@ Labelimg 是一个图形图像标注工具，用于在图像中标注物体边�
 
 
 
+#### 88_图像数据增强(Data Augmentation)
+
+Augmentor https://github.com/mdbloice/Augmentor
+
+Data Augmentation--数据增强解决你有限的数据集 https://blog.csdn.net/u010801994/article/details/81914716
+
+非常好用的Python图像增强工具，适用多个框架 https://blog.csdn.net/u011984148/article/details/99439562
+
+图像数据增强 https://www.cnblogs.com/siyuan1998/p/10686616.html
+
+图像数据增强方法一览 https://segmentfault.com/a/1190000016526917
+
+
+
+
+
+
+
+
+
+
