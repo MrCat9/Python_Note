@@ -756,6 +756,8 @@ dlib 文件下载 http://dlib.net/files/
 
 人脸识别之Python DLib库进行人脸关键点识别 https://www.cnblogs.com/raorao1994/p/11001755.html
 
+用Python实现简单的人脸相似度对比 https://blog.csdn.net/m0_38106923/article/details/83862334
+
 
 
 
