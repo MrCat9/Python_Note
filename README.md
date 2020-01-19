@@ -805,3 +805,10 @@ https://github.com/sylnsfar/qrcode/blob/master/README-cn.md
 
 
 
+#### 86_face_recognition
+
+https://github.com/ageitgey/face_recognition
+
+```
+人脸检测  人脸识别
+```
