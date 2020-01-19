@@ -812,3 +812,18 @@ https://github.com/ageitgey/face_recognition
 ```
 人脸检测  人脸识别
 ```
+
+
+
+
+#### 87_LabelImg
+
+https://github.com/tzutalin/labelImg
+
+```
+Labelimg 是一个图形图像标注工具，用于在图像中标注物体边界框
+```
+
+
+
+
