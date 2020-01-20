@@ -814,6 +814,10 @@ https://github.com/ageitgey/face_recognition
 
 ```
 人脸检测  人脸识别
+
+安装：
+1. 先安装dlib
+2. pip install face_recognition
 ```
 
 
