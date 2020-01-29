@@ -851,6 +851,12 @@ Data Augmentation--数据增强解决你有限的数据集 https://blog.csdn.net
 
 #### 89_bunch
 
+pypi bunch
+https://pypi.org/project/bunch/
+
+python函数——Bunch配置加载
+https://blog.csdn.net/wcy23580/article/details/89708801
+
 ```
 Bunch is a dictionary that supports attribute-style access, a la JavaScript.
 ```
