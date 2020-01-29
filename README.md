@@ -849,7 +849,18 @@ Data Augmentation--数据增强解决你有限的数据集 https://blog.csdn.net
 
 
 
+#### 89_bunch
 
+```
+Bunch is a dictionary that supports attribute-style access, a la JavaScript.
+```
+
+```python
+>>> b = Bunch()
+>>> b.hello = 'world'
+>>> b.hello
+'world'
+```
 
 
 
