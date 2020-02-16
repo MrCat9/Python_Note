@@ -28,6 +28,8 @@ if os.path.exists(path) is not True:
 # 拷贝文件 file_path 到指定目录 tag_dir
 # shutil.copy(file_path, tag_dir)
 shutil.copy('test01.py', 'test_dir')
+# 拷贝并重命名文件
+shutil.copy('test01.py', 'test_dir/test001.py')
 
 # 删除文件
 os.remove(os.path.join(BASE_DIR, 'test_dir\\test01.py'))
