@@ -168,6 +168,14 @@ GIL全局锁  https://www.cnblogs.com/hukey/p/7263207.html
 
 20_ORM_sqlalchemy（用于操作数据库）
 
+https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0014021031294178f993c85204e4d1b81ab032070641ce5000
+
+https://www.cnblogs.com/Zzbj/p/10212279.html
+
+sqlalchemy实现时间列自动更新 https://blog.csdn.net/kuangshp128/article/details/85700701
+
+sqlalchemy更新数据 https://blog.51cto.com/12965094/2362002?source=dra
+
 20_2_ORM_sqlalchemy（外键）
 
 20_3_ORM_sqlalchemy_外键
