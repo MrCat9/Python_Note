@@ -881,3 +881,23 @@ Bunch is a dictionary that supports attribute-style access, a la JavaScript.
 
 https://blog.csdn.net/gywtzh0889/article/details/71083459/
 
+
+
+
+#### 91_PIL将png的RGBA四通道改为jpg的RGB三通道方法
+
+https://blog.csdn.net/missyougoon/article/details/85331493
+
+```python
+img = Image.open('test.png')
+img = img.convert('RGB')
+```
+
+```
+PIL包含九种不同模式：1，L，P，RGB，RGBA，CMYK，YCbCr,I，F
+使用Image.convert()，可以在这九中模式中进行切换。
+模式1为二值图像，非黑即白。
+模式L为灰度图像。
+RGB就是通常说的三原色。
+RGBA就是上例上的在三原色的基础上增加了一个alpha通道。
+```
