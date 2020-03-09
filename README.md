@@ -901,3 +901,21 @@ PIL包含九种不同模式：1，L，P，RGB，RGBA，CMYK，YCbCr,I，F
 RGB就是通常说的三原色。
 RGBA就是上例上的在三原色的基础上增加了一个alpha通道。
 ```
+
+
+
+
+#### 92_用*和**给函数传参
+
+```python
+def foo(*args, **kwargs):
+    print("args:", args)
+    print("kwargs:", kwargs)
+```
+
+https://www.cnblogs.com/beiluowuzheng/p/8461518.html
+
+
+
+
+
