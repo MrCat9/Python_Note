@@ -918,4 +918,22 @@ https://www.cnblogs.com/beiluowuzheng/p/8461518.html
 
 
 
+#### 93_Faker
+
+```
+Faker is a Python package that generates fake data for you.
+生成随机姓名、地址、电子邮箱等随机用户信息
+```
+
+https://github.com/joke2k/faker
+
+https://pypi.org/project/Faker/
+
+https://faker.readthedocs.io/en/master/locales/zh_CN.html
+
+
+
+
+#### 94_
+
 
