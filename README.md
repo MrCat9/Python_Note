@@ -939,3 +939,22 @@ https://faker.readthedocs.io/en/master/locales/zh_CN.html
 python爬虫js加密解密系列文章合集 https://blog.csdn.net/weixin_33933118/article/details/89551449
 
 
+
+
+#### 95_通用新闻正文解析
+
+newspaper https://github.com/codelucas/newspaper
+
+GeneralNewsExtractor https://github.com/kingname/GeneralNewsExtractor
+
+利用文本及符号密度来提取新闻网页正文 https://pylist.com/t/1576112934
+
+
+
+
+#### 96_通用论坛解析
+
+https://spaces.ac.cn/archives/4422
+
+https://blog.csdn.net/qq_34202873/article/details/78452449
+
