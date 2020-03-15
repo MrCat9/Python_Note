@@ -934,6 +934,8 @@ https://faker.readthedocs.io/en/master/locales/zh_CN.html
 
 
 
-#### 94_
+#### 94_爬虫js加密
+
+python爬虫js加密解密系列文章合集 https://blog.csdn.net/weixin_33933118/article/details/89551449
 
 
