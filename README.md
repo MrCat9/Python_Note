@@ -958,3 +958,35 @@ https://spaces.ac.cn/archives/4422
 
 https://blog.csdn.net/qq_34202873/article/details/78452449
 
+
+
+
+#### 97_图片格式转换.ppm转.jpg
+
+```python
+from PIL import Image
+
+img = Image.open('input_img.ppm')
+img.save('output_img.jpg')
+img.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
