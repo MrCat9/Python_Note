@@ -974,6 +974,11 @@ img.show()
 
 
 
+#### [98_取出字符串str中的特定字符](https://github.com/MrCat9/Python_Note/blob/master/find_str_char.py)
+
+```
+取出字符串中的所有数字/所有数字和字母
+```
 
 
 
