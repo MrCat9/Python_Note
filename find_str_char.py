@@ -26,12 +26,12 @@ print(num_char)  # ['a', 'b', 'c', '1', '2', '3', 'd', 'e', 'f', '4', '5', '6', 
 # 判断字符串是否是数字
 print(str1.isdigit())  # False
 
-# 取出字符串中的数字 1
+# 取出字符串中的数字 方法1
 num = filter(str.isdigit, str1)
 num = list(num)
 print(num)  # ['1', '2', '3', '4', '5', '6']
 
-# 取出字符串中的数字 2
+# 取出字符串中的数字 方法2
 num = [x for x in str1 if x.isdigit()]
 print(num)  # ['1', '2', '3', '4', '5', '6']
 
