@@ -983,13 +983,29 @@ img.show()
 
 
 
+#### 99_字符串str根据字典替换
+
+```python
+t = str.maketrans('lzZoODpq', '12200099')  # dict
+r = 'olz345678q'.translate(t)  # str
+print(r)  # 0123456789
+```
 
 
 
 
+#### [100_使用正则表达式re完成字符串str根据字典替换](https://github.com/MrCat9/Python_Note/blob/master/str_dict_replace.py)
+
+http://www.cocoachina.com/articles/88965
 
 
 
+
+#### 101_re_sub_正则表达式sub替换
+
+https://blog.csdn.net/qq_43088815/article/details/90214217?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+
+http://www.mamicode.com/info-detail-2327645.html
 
 
 
