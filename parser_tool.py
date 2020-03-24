@@ -75,7 +75,7 @@ def parse_publish_time(html_str):
                         continue
             else:
                 print('[try match publish_time] match failed, use', '"' + regex_name + '"')
-                pass
+                # pass
 
             if publish_time:
                 break
