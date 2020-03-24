@@ -64,17 +64,17 @@ def parse_publish_time(html_str):
                         publish_time = '{}-{}-{} {}:{}:{}'.format(items[0], items[1], items[2], items[3], items[4], items[5])
                     else:
                         publish_time = ''
-                        # print('[try match publish_time] match failed, use', '"' + regex_name + '"')
+                        print('[try match publish_time] match failed, use', '"' + regex_name + '"')
                         continue
                     # 验证 时间长度正确 且 发布时间不晚于当前时间
                     if 14 < len(publish_time) < 20 and publish_time <= now_time_str:
                         break
                     else:
                         publish_time = ''
-                        # print('[try match publish_time] match failed, use', '"' + regex_name + '"')
+                        print('[try match publish_time] match failed, use', '"' + regex_name + '"')
                         continue
             else:
-                # print('[try match publish_time] match failed, use', '"' + regex_name + '"')
+                print('[try match publish_time] match failed, use', '"' + regex_name + '"')
                 pass
 
             if publish_time:
