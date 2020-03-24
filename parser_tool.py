@@ -20,6 +20,7 @@ def parse_publish_time(html_str):
         {'name': 'whitout_S', 'regex_str': r'(\d{4})[ 年/\.-](\d{1,2})[ 月/\.-](\d{1,2})[ 日].{0,20}?(\d{1,2})[:：](\d{1,2})'},  # 2019/1/1 11:11
         {'name': 'whitout_Y', 'regex_str': r'(\d{4})[ 年/\.-](\d{1,2})[ 月/\.-](\d{1,2})[ 日].{0,20}?(\d{1,2})[:：](\d{1,2})[:：](\d{1,2})'},  # 1/1 11:11:11
         {'name': 'whitout_Y_S', 'regex_str':  r'(\d{1,2})[ 月/\.-](\d{1,2})[ 日].{0,20}?(\d{1,2})[:：](\d{1,2})'},  # 1/1 11:11
+        {'name': 'whitout_H_m_S', 'regex_str': r'(\d{4})[ 年/\.-](\d{1,2})[ 月/\.-](\d{1,2})[ 日]'},  # 2020年2月27日
     ]
 
     now_time = datetime.now()
@@ -37,12 +38,16 @@ def parse_publish_time(html_str):
                 items = list(items)
 
                 if regex_name == 'whitout_S':
-                    items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
+                    items.append('00')  # 没有发布时间的秒时，填入秒的默认值 00
                 if regex_name == 'whitout_Y':
                     items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
                 if regex_name == 'whitout_Y_S':
                     items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
-                    items.append('59')  # 没有发布时间的秒时，填入秒的默认值 59
+                    items.append('00')  # 没有发布时间的秒时，填入秒的默认值 00
+                if regex_name == 'whitout_H_m_S':
+                    items.append('00')
+                    items.append('00')
+                    items.append('00')
 
                 # 处理 publish_time 的格式
                 def add_0(num_str):  # 在只有一位数的值前面补个0
