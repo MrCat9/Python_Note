@@ -32,48 +32,50 @@ def parse_publish_time(html_str):
         regex_name = temp['name']
         regex_str = temp['regex_str']
         try:
-            re_result = re.search(regex_str, html_str)
+            re_result = re.findall(regex_str, html_str)
             if re_result:
-                items = re_result.groups()
-                items = list(items)
+                for items in re_result:
+                    items = list(items)
 
-                if regex_name == 'whitout_S':
-                    items.append('00')  # 没有发布时间的秒时，填入秒的默认值 00
-                if regex_name == 'whitout_Y':
-                    items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
-                if regex_name == 'whitout_Y_S':
-                    items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
-                    items.append('00')  # 没有发布时间的秒时，填入秒的默认值 00
-                if regex_name == 'whitout_H_m_S':
-                    items.append('00')
-                    items.append('00')
-                    items.append('00')
+                    if regex_name == 'whitout_S':
+                        items.append('00')  # 没有发布时间的秒时，填入秒的默认值 00
+                    if regex_name == 'whitout_Y':
+                        items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
+                    if regex_name == 'whitout_Y_S':
+                        items.insert(0, str(now_time.year))  # 没有发布时间的年时，填入年的默认值 当前时间的年
+                        items.append('00')  # 没有发布时间的秒时，填入秒的默认值 00
+                    if regex_name == 'whitout_H_m_S':
+                        items.append('00')
+                        items.append('00')
+                        items.append('00')
 
-                # 处理 publish_time 的格式
-                def add_0(num_str):  # 在只有一位数的值前面补个0
-                    if len(num_str) == 1:
-                        return '0' + num_str
+                    # 处理 publish_time 的格式
+                    def add_0(num_str):  # 在只有一位数的值前面补个0
+                        if len(num_str) == 1:
+                            return '0' + num_str
+                        else:
+                            return num_str
+
+                    items = list(map(add_0, items))
+
+                    # 验证日期时间是否正确
+                    # 验证 日期 时间 的数值
+                    if 0 <= int(items[0]) and 1 <= int(items[1]) <= 12 and 1 <= int(items[2]) <= 31 and 0 <= int(items[3]) <= 24 and 0 <= int(items[4]) <= 59 and 0 <= int(items[5]) <= 59:
+                        publish_time = '{}-{}-{} {}:{}:{}'.format(items[0], items[1], items[2], items[3], items[4], items[5])
                     else:
-                        return num_str
-                items = list(map(add_0, items))
-
-                # 验证日期时间是否正确
-                # 验证 日期 时间 的数值
-                if 0 <= int(items[0]) and 1 <= int(items[1]) <= 12 and 1 <= int(items[2]) <= 31 and 0 <= int(items[3]) <= 24 and 0 <= int(items[4]) <= 59 and 0 <= int(items[5]) <= 59:
-                    publish_time = '{}-{}-{} {}:{}:{}'.format(items[0], items[1], items[2], items[3], items[4], items[5])
-                else:
-                    publish_time = ''
-                    print('[try match publish_time] match failed, use', '"' + regex_name + '"')
-                    continue
-                # 验证 时间长度正确 且 发布时间不晚于当前时间
-                if 14 < len(publish_time) < 20 and publish_time <= now_time_str:
-                    pass
-                else:
-                    publish_time = ''
-                    print('[try match publish_time] match failed, use', '"' + regex_name + '"')
-                    continue
+                        publish_time = ''
+                        # print('[try match publish_time] match failed, use', '"' + regex_name + '"')
+                        continue
+                    # 验证 时间长度正确 且 发布时间不晚于当前时间
+                    if 14 < len(publish_time) < 20 and publish_time <= now_time_str:
+                        break
+                    else:
+                        publish_time = ''
+                        # print('[try match publish_time] match failed, use', '"' + regex_name + '"')
+                        continue
             else:
-                print('[try match publish_time] match failed, use', '"'+regex_name+'"')
+                # print('[try match publish_time] match failed, use', '"' + regex_name + '"')
+                pass
 
             if publish_time:
                 break
