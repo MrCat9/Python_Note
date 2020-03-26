@@ -1035,4 +1035,17 @@ https://www.cnblogs.com/programmer-tlh/p/10461353.html
 
 
 
+#### 103_package和模块
 
+https://www.jianshu.com/p/178c26789011
+
+
+
+
+#### 104_Python中的__all__
+
+```
+__all__是一个字符串list，用来定义模块中对于from XXX import *时要对外导出的符号，即要暴露的接口，但它只对import *起作用，对from XXX import XXX不起作用。
+```
+
+https://www.jianshu.com/p/ca469f693c31
