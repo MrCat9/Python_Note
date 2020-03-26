@@ -991,6 +991,24 @@ r = 'olz345678q'.translate(t)  # str
 print(r)  # 0123456789
 ```
 
+```python
+t = {
+    ord('l'): '1',
+    ord('z'): '2',
+    ord('Z'): '2',
+    ord('o'): '0',
+    ord('O'): '0',
+    ord('D'): '0',
+    ord('p'): '9',
+    ord('q'): '9',
+}
+# ord()
+# Return the Unicode code point for a one-character string.
+# 返回单个字符的 Unicode 值（int）
+r = 'olz345678q'.translate(t)  # str
+print(r)  # 0123456789
+```
+
 
 
 
