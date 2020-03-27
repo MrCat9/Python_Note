@@ -1049,3 +1049,18 @@ __all__是一个字符串list，用来定义模块中对于from XXX import *时�
 ```
 
 https://www.jianshu.com/p/ca469f693c31
+
+
+
+
+#### 105_找出列表list中的重复元素
+
+https://blog.csdn.net/August1226/article/details/82144759
+
+```python
+from collections import Counter  # 引入Counter
+a = [29, 36, 57, 12, 79, 43, 23, 56, 28, 11, 14, 15, 16, 37, 24, 35, 17, 24, 33, 15, 39, 46, 52, 13]
+b = dict(Counter(a))
+print([key for key, value in b.items() if value > 1])  # 只展示重复元素
+print({key: value for key, value in b.items() if value > 1})  # 展现重复元素和重复次数
+```
