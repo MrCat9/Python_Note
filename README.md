@@ -1064,3 +1064,16 @@ b = dict(Counter(a))
 print([key for key, value in b.items() if value > 1])  # 只展示重复元素
 print({key: value for key, value in b.items() if value > 1})  # 展现重复元素和重复次数
 ```
+
+
+
+
+#### 106_思知机器人
+
+```
+聊天机器  知识图谱
+```
+
+https://www.ownthink.com
+
+https://github.com/ownthink/KnowledgeGraphData
