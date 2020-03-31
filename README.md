@@ -1077,3 +1077,33 @@ print({key: value for key, value in b.items() if value > 1})  # 展现重复元�
 https://www.ownthink.com
 
 https://github.com/ownthink/KnowledgeGraphData
+
+
+
+
+#### 对字典dict按value排序
+
+https://www.cnblogs.com/beile/p/11276532.html
+
+```python
+d = {
+    '1': 1,
+    '5': 5,
+    '3': 3,
+    '2': 2,
+    '4': 4,
+}
+r = sorted(d.items(), key=lambda x: x[1], reverse=True)  # reverse=True -> 降序排列
+print(r)
+```
+
+
+
+
+
+
+
+
+
+
+
