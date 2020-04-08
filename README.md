@@ -341,7 +341,7 @@ https://blog.csdn.net/u014762921/article/details/79064756/
 
 
 
-42_生成器(generator)(yield)
+42_迭代器(Iterator)生成器(generator)(yield)
 
 ```
 https://blog.csdn.net/SL_World/article/details/86507872
@@ -350,9 +350,11 @@ https://blog.csdn.net/SL_World/article/details/86507872
 
 
 
-43_python异步IO之协程(yield)(yield from)(async)
+43_python异步IO之协程(yield)(yield from)(async)(asyncio)
 
 ```
+https://segmentfault.com/a/1190000008814676
+
 https://blog.csdn.net/SL_World/article/details/86597738
 https://blog.csdn.net/SL_World/article/details/86691747
 ```
@@ -1081,7 +1083,7 @@ https://github.com/ownthink/KnowledgeGraphData
 
 
 
-#### 对字典dict按value排序
+#### 107_对字典dict按value排序
 
 https://www.cnblogs.com/beile/p/11276532.html
 
@@ -1100,6 +1102,30 @@ print(r)
 
 
 
+#### [108_wrk_压力测试性能测试工具](https://github.com/MrCat9/Python_Note/blob/master/wrk_README.md)
+
+https://github.com/wg/wrk
+
+HTTP压测工具之wrk https://www.jianshu.com/p/ac185e01cc30
+
+
+
+
+#### 109_python高性能web框架
+
+```
+Tornado
+Japronto
+```
+
+
+
+
+#### 110_locust_压力测试性能测试工具
+
+https://github.com/locustio/locust
+
+性能测试工具Locust的使用 https://www.cnblogs.com/ailiailan/p/9474973.html
 
 
 
