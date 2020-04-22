@@ -1138,9 +1138,20 @@ chromedriver与chrome各版本及下载地址  https://blog.csdn.net/cz9025/arti
 
 
 
+#### 112_fake_user_agent
+
+```
+fake ua
+```
+
+[fake_ua.json](https://github.com/MrCat9/Python_Note/blob/master/fake_ua.json)
+
+```python
+import json
 
 
-
-
+with open('fake_ua.json', 'r') as f:
+    a = json.loads(f.read())
+```
 
 
