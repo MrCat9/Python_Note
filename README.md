@@ -1138,6 +1138,7 @@ chromedriver与chrome各版本及下载地址  https://blog.csdn.net/cz9025/arti
 
 
 
+
 #### 112_fake_user_agent
 
 ```
@@ -1155,3 +1156,28 @@ with open('fake_ua.json', 'r') as f:
 ```
 
 
+
+
+#### 113_splash
+
+```
+splash是一个javascript渲染服务，支持异步。考虑用来替换selenium。
+将selenium集成到scrapy时会造成堵塞，降低scrapy异步框架的性能，所以考虑用支持异步的splash替换selenium。
+```
+
+scrapy-splash https://github.com/scrapy-plugins/scrapy-splash
+
+python3之Splash https://www.cnblogs.com/zhangxinqi/p/9279014.html
+
+python爬虫之Splash使用初体验 https://www.cnblogs.com/lei0213/p/8432031.html
+
+Python爬虫：splash+requests简单示例 https://blog.csdn.net/mouday/article/details/82843401
+
+
+
+
+#### [114_使用pandas解析html中的table](https://github.com/MrCat9/Python_Note/blob/master/pandas_read_html.py)
+
+```python
+dfs = pd.read_html(hs)
+```
