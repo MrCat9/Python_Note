@@ -1181,3 +1181,17 @@ Python爬虫：splash+requests简单示例 https://blog.csdn.net/mouday/article/
 ```python
 dfs = pd.read_html(hs)
 ```
+
+
+
+
+#### 115_测试框架pytest
+
+https://docs.pytest.org/en/latest/
+
+
+
+
+
+
+
