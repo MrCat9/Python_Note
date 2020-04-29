@@ -1192,6 +1192,22 @@ https://docs.pytest.org/en/latest/
 
 
 
+#### 116_dict找出value大于某值或key大于某值的所有项
+
+```python
+test_dict = {1:5, 2:4, 3:3, 4:2, 5:1}
+{k:v for k, v in test_dict.items() if k>=3}  # {3: 3, 4: 2, 5: 1}
+[v for k, v in test_dict.items() if k>=3]  # [3, 2, 1]
+
+```
+
+
+
+
+
+
+
+
 
 
 
