@@ -1085,7 +1085,7 @@ https://github.com/ownthink/KnowledgeGraphData
 
 #### 107_对字典dict按value排序
 
-https://www.cnblogs.com/beile/p/11276532.html
+https://blog.csdn.net/laobai1015/article/details/85114570
 
 ```python
 d = {
@@ -1201,9 +1201,16 @@ test_dict = {1:5, 2:4, 3:3, 4:2, 5:1}
 
 ```
 
+#### 117_`jupyter`的`.ipynb`转`.py`
 
+```
+> jupyter nbconvert --to script tt01.ipynb
+```
 
-
+```
+访问 http://127.0.0.1:8888/notebooks/tt01.ipynb
+File -> Download as
+```
 
 
 
