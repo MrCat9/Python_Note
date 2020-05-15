@@ -1133,7 +1133,7 @@ https://github.com/locustio/locust
 #### 111_selenium_chromedriver
 
     http://chromedriver.storage.googleapis.com/index.html
-
+    
     chromedriver与chrome各版本及下载地址  https://blog.csdn.net/cz9025/article/details/70160273
 
 #### 112_fake_user_agent
@@ -1158,13 +1158,13 @@ https://github.com/locustio/locust
     splash是一个javascript渲染服务，支持异步。考虑用来替换selenium。
     将selenium集成到scrapy时会造成堵塞，降低scrapy异步框架的性能，所以考虑用支持异步的splash替换selenium。
     ```
-
+    
     scrapy-splash https://github.com/scrapy-plugins/scrapy-splash
-
+    
     python3之Splash https://www.cnblogs.com/zhangxinqi/p/9279014.html
-
+    
     python爬虫之Splash使用初体验 https://www.cnblogs.com/lei0213/p/8432031.html
-
+    
     Python爬虫：splash+requests简单示例 https://blog.csdn.net/mouday/article/details/82843401
 
 #### [114_使用pandas解析html中的table](https://github.com/MrCat9/Python_Note/blob/master/pandas_read_html.py)
@@ -1183,7 +1183,7 @@ https://github.com/locustio/locust
     test_dict = {1:5, 2:4, 3:3, 4:2, 5:1}
     {k:v for k, v in test_dict.items() if k>=3}  # {3: 3, 4: 2, 5: 1}
     [v for k, v in test_dict.items() if k>=3]  # [3, 2, 1]
-
+    
     ```
 
 #### 117_jupyter的.ipynb转.py
@@ -1191,7 +1191,7 @@ https://github.com/locustio/locust
     ```
     > jupyter nbconvert --to script tt01.ipynb
     ```
-
+    
     ```
     访问 http://127.0.0.1:8888/notebooks/tt01.ipynb
     File -> Download as
@@ -1203,7 +1203,8 @@ https://github.com/locustio/locust
 
 #### 120_pycharm使用远程jupyter
 
-    pycharm设置jupyter服务器
-    ！[jupyter_server](https://github.com/MrCat9/Python_Note/img/jupyter_server.png)
+pycharm设置jupyter服务器
+
+![jupyter_server](https://github.com/MrCat9/Python_Note/img/jupyter_server.png)
 
 
