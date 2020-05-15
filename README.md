@@ -1212,8 +1212,9 @@ test_dict = {1:5, 2:4, 3:3, 4:2, 5:1}
 File -> Download as
 ```
 
-#### [118_CentOS7部署使用jupyter](https://github.com/MrCat9/Python_Note/blob/master/centos7_jupyter.md)
+#### [118_CentOS7部署jupyter](https://github.com/MrCat9/Python_Note/blob/master/centos7_jupyter.md)
 
+#### [119_jupyter使用不同内核（虚拟环境）](https://github.com/MrCat9/Python_Note/blob/master/jupyter_kernel.md)
 
 
 
