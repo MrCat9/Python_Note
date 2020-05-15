@@ -1132,90 +1132,78 @@ https://github.com/locustio/locust
 
 #### 111_selenium_chromedriver
 
-http://chromedriver.storage.googleapis.com/index.html
+    http://chromedriver.storage.googleapis.com/index.html
 
-chromedriver与chrome各版本及下载地址  https://blog.csdn.net/cz9025/article/details/70160273
-
-
-
+    chromedriver与chrome各版本及下载地址  https://blog.csdn.net/cz9025/article/details/70160273
 
 #### 112_fake_user_agent
 
-```
-fake ua
-```
+    ```
+    fake ua
+    ```
 
 [fake_ua.json](https://github.com/MrCat9/Python_Note/blob/master/fake_ua.json)
 
-```python
-import json
+    ```python
+    import json
 
 
-with open('fake_ua.json', 'r') as f:
-    a = json.loads(f.read())
-```
-
-
-
+    with open('fake_ua.json', 'r') as f:
+        a = json.loads(f.read())
+    ```
 
 #### 113_splash
 
-```
-splash是一个javascript渲染服务，支持异步。考虑用来替换selenium。
-将selenium集成到scrapy时会造成堵塞，降低scrapy异步框架的性能，所以考虑用支持异步的splash替换selenium。
-```
+    ```
+    splash是一个javascript渲染服务，支持异步。考虑用来替换selenium。
+    将selenium集成到scrapy时会造成堵塞，降低scrapy异步框架的性能，所以考虑用支持异步的splash替换selenium。
+    ```
 
-scrapy-splash https://github.com/scrapy-plugins/scrapy-splash
+    scrapy-splash https://github.com/scrapy-plugins/scrapy-splash
 
-python3之Splash https://www.cnblogs.com/zhangxinqi/p/9279014.html
+    python3之Splash https://www.cnblogs.com/zhangxinqi/p/9279014.html
 
-python爬虫之Splash使用初体验 https://www.cnblogs.com/lei0213/p/8432031.html
+    python爬虫之Splash使用初体验 https://www.cnblogs.com/lei0213/p/8432031.html
 
-Python爬虫：splash+requests简单示例 https://blog.csdn.net/mouday/article/details/82843401
-
-
-
+    Python爬虫：splash+requests简单示例 https://blog.csdn.net/mouday/article/details/82843401
 
 #### [114_使用pandas解析html中的table](https://github.com/MrCat9/Python_Note/blob/master/pandas_read_html.py)
 
-```python
-dfs = pd.read_html(hs)
-```
-
-
-
+    ```python
+    dfs = pd.read_html(hs)
+    ```
 
 #### 115_测试框架pytest
 
-https://docs.pytest.org/en/latest/
-
-
-
+    https://docs.pytest.org/en/latest/
 
 #### 116_dict找出value大于某值或key大于某值的所有项
 
-```python
-test_dict = {1:5, 2:4, 3:3, 4:2, 5:1}
-{k:v for k, v in test_dict.items() if k>=3}  # {3: 3, 4: 2, 5: 1}
-[v for k, v in test_dict.items() if k>=3]  # [3, 2, 1]
+    ```python
+    test_dict = {1:5, 2:4, 3:3, 4:2, 5:1}
+    {k:v for k, v in test_dict.items() if k>=3}  # {3: 3, 4: 2, 5: 1}
+    [v for k, v in test_dict.items() if k>=3]  # [3, 2, 1]
 
-```
+    ```
 
 #### 117_jupyter的.ipynb转.py
 
-```
-> jupyter nbconvert --to script tt01.ipynb
-```
+    ```
+    > jupyter nbconvert --to script tt01.ipynb
+    ```
 
-```
-访问 http://127.0.0.1:8888/notebooks/tt01.ipynb
-File -> Download as
-```
+    ```
+    访问 http://127.0.0.1:8888/notebooks/tt01.ipynb
+    File -> Download as
+    ```
 
 #### [118_CentOS7部署jupyter](https://github.com/MrCat9/Python_Note/blob/master/centos7_jupyter.md)
 
 #### [119_jupyter使用不同内核（虚拟环境）](https://github.com/MrCat9/Python_Note/blob/master/jupyter_kernel.md)
 
+#### 120_pycharm使用远程jupyter
 
+    pycharm设置jupyter服务器
+    ！[jupyter_server](https://github.com/MrCat9/Python_Note/img/jupyter_server.png)
 
 
