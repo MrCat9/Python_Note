@@ -1205,6 +1205,6 @@ https://github.com/locustio/locust
 
 pycharm设置jupyter服务器
 
-![jupyter_server](https://github.com/MrCat9/Python_Note/img/jupyter_server.png)
+![jupyter_server](img/jupyter_server.png)
 
 
