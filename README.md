@@ -1207,4 +1207,8 @@ pycharm设置jupyter服务器
 
 ![jupyter_server](img/jupyter_server.png)
 
+#### 121_python魔法函数
 
+__getitem__, __setitem__, __delitem__和__getattr__, __setattr__, __delattr__ https://www.jb51.net/article/168915.htm
+
+属性描述符(__get__,__set__,__delete__)，@property类属性  https://blog.csdn.net/qq_34979346/article/details/83758447
