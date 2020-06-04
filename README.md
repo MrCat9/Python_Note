@@ -281,6 +281,7 @@ https://blog.csdn.net/qq_20417499/article/details/80566265
 
 
 33_最大限度切分字符串（考虑顺序）
+
 ```
 "123"
 ['123', '1', '12', '23', '2', '3']
@@ -1212,3 +1213,14 @@ pycharm设置jupyter服务器
 __getitem__, __setitem__, __delitem__和__getattr__, __setattr__, __delattr__ https://www.jb51.net/article/168915.htm
 
 属性描述符(__get__,__set__,__delete__)，@property类属性  https://blog.csdn.net/qq_34979346/article/details/83758447
+
+#### 122_列表list逆序排列
+
+Python 让列表逆序排列的 3 种方式
+
+https://baijiahao.baidu.com/s?id=1596184962608889085&wfr=spider&for=pc
+
+
+
+
+
