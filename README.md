@@ -19,7 +19,6 @@ python 文档 https://docs.python.org/3.6/index.html
 
 
 
-
 3_从list中取出元素
 
 ```
@@ -1220,7 +1219,9 @@ Python 让列表逆序排列的 3 种方式
 
 https://baijiahao.baidu.com/s?id=1596184962608889085&wfr=spider&for=pc
 
+#### 123_弱口令字典
 
+https://github.com/klionsec/SuperWordlist
 
 
 
