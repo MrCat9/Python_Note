@@ -250,8 +250,7 @@ if __name__ == '__main__':
 
 
 
-
-28_python源码保护
+[28_python源码保护与打包](https://github.com/MrCat9/Python_Note/blob/master/python源码保护与打包)
 
 
 
@@ -270,8 +269,8 @@ if __name__ == '__main__':
 
 
 
-
 32_发送邮件
+
 ```
 https://blog.csdn.net/qq_20417499/article/details/80566265
 ```
@@ -473,7 +472,6 @@ find_element_by_tag_name
 ```
 Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126327/article/details/81285487
 ```
-
 
 
 

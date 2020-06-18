@@ -19,13 +19,21 @@ py_compile.compile(r'F:\pycharm\···\test01.py')  # py文件完整的路径
 
 ## 打包成exe
 
+### pyinstaller
+
 cmd 下，cd到.py文件的文件夹
 
 ```
 pyinstaller test01.py
 ```
 
+### Nuitka
+
+https://zhuanlan.zhihu.com/p/133303836
+
 ## 编译成 .pyd 文件（windows上） 或 .so文件（Linux上）
+
+### cython
 
 将 python 源码 .py 文件转为 .pyd 文件 或 .so文件
 ```
