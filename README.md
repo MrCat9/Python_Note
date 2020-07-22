@@ -1221,5 +1221,9 @@ https://baijiahao.baidu.com/s?id=1596184962608889085&wfr=spider&for=pc
 
 https://github.com/klionsec/SuperWordlist
 
+#### 124_更新pip版本
 
+Windows下 `python -m pip install --upgrade pip`
+
+Linux下 `pip install --upgrade pip`
 
