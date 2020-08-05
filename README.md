@@ -1227,3 +1227,14 @@ Windows下 `python -m pip install --upgrade pip`
 
 Linux下 `pip install --upgrade pip`
 
+#### 125_jupyter notebook后台运行
+
+以`my_tt01.ipynb`为例，终端输出信息将保存在当前目录下的`nohup.out`文件中，notebook的输出将保存在`my_tt01.nbconvert.ipynb`
+
+```
+nohup jupyter nbconvert --execute --to notebook my_tt01.ipynb &
+```
+
+> 报错：TimeoutError: Cell execution timed out
+>
+> 可以考虑将 `/home/user001/.virtualenvs/my_virtualenvs/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py`的第89行的`timeout`值由`30`改为`-1`
