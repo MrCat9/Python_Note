@@ -21,9 +21,7 @@ python 文档 https://docs.python.org/3.6/index.html
 
 3_从list中取出元素
 
-```
-pop,append,for
-```
+`pop`,`append`,`for`
 
 
 
