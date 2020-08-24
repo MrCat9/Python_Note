@@ -1237,7 +1237,7 @@ nohup jupyter nbconvert --execute --to notebook my_tt01.ipynb &
 >
 > 可以考虑将 `/home/user001/.virtualenvs/my_virtualenvs/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py`的第89行的`timeout`值由`30`改为`-1`
 
-[126_将数值压缩到指定范围（归一化）](https://github.com/MrCat9/Python_Note/blob/master/num2range.ipynb)
+[126_将数值压缩到指定范围（归一化）`sklearn.preprocessing.MinMaxScaler`](https://github.com/MrCat9/Python_Note/blob/master/num2range.ipynb)
 
 
 
