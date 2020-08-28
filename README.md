@@ -1239,7 +1239,7 @@ nohup jupyter nbconvert --execute --to notebook my_tt01.ipynb &
 
 #### [126_将数值压缩到指定范围（归一化）`sklearn.preprocessing.MinMaxScaler`](https://github.com/MrCat9/Python_Note/blob/master/num2range.ipynb)
 
-#### [127_提取pdf中的表格](https://github.com/MrCat9/Python_Note/blob/master/camelot_test)
+#### [127_使用`camelot`提取pdf中的表格](https://github.com/MrCat9/Python_Note/blob/master/camelot_test)
 
 
 
