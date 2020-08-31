@@ -7,7 +7,7 @@ import camelot  # pip install camelot-py[cv]
 # 安装 ghostscript  # https://www.ghostscript.com/download/gsdnld.html
 
 
-# tables = camelot.read_pdf('foo.pdf')
+# tables = camelot.read_pdf('foo.pdf')  # 默认flavor='lattice'  # 使用ghostscript将PDF页面转换为图像
 tables = camelot.read_pdf('foo.pdf', pages='all')
 # tables = camelot.read_pdf('foo.pdf', flavor='stream')  # 将pdf视为图片
 tables  # <TableList n=4>
