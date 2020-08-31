@@ -9,7 +9,7 @@ import camelot  # pip install camelot-py[cv]
 
 # tables = camelot.read_pdf('foo.pdf')  # 默认flavor='lattice'  # 使用ghostscript将PDF页面转换为图像
 tables = camelot.read_pdf('foo.pdf', pages='all')
-# tables = camelot.read_pdf('foo.pdf', flavor='stream')  # 将pdf视为图片
+# tables = camelot.read_pdf('foo.pdf', flavor='stream')
 tables  # <TableList n=4>
 
 tables.export('foo.csv', f='csv', compress=True)  # json, excel, html, sqlite  # 可以输出一个zip，包括pdf每一页的csv结果
