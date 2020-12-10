@@ -1241,5 +1241,7 @@ nohup jupyter nbconvert --execute --to notebook my_tt01.ipynb &
 
 #### [127_使用`camelot`提取pdf中的表格](https://github.com/MrCat9/Python_Note/blob/master/camelot_test)
 
+#### 128_jupyter显示html
 
+jupyter渲染网页的3种方式 https://www.cnblogs.com/chenqionghe/p/12373387.html
 
