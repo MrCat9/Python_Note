@@ -1245,3 +1245,6 @@ nohup jupyter nbconvert --execute --to notebook my_tt01.ipynb &
 
 jupyter渲染网页的3种方式 https://www.cnblogs.com/chenqionghe/p/12373387.html
 
+#### 129_字符串模糊匹配
+
+python字符串模糊匹配Fuzzywuzzy https://blog.csdn.net/weixin_41413177/article/details/90300139
