@@ -14,7 +14,6 @@ python 文档 https://docs.python.org/3.6/index.html
 
 
 
-
 2_快速退出递归可以考虑return和yield
 
 
@@ -1246,5 +1245,7 @@ nohup jupyter nbconvert --execute --to notebook my_tt01.ipynb &
 jupyter渲染网页的3种方式 https://www.cnblogs.com/chenqionghe/p/12373387.html
 
 #### 129_字符串模糊匹配
+
+fuzzywuzzy https://github.com/seatgeek/fuzzywuzzy
 
 python字符串模糊匹配Fuzzywuzzy https://blog.csdn.net/weixin_41413177/article/details/90300139
