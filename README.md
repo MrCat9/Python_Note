@@ -1249,3 +1249,7 @@ jupyter渲染网页的3种方式 https://www.cnblogs.com/chenqionghe/p/12373387.
 fuzzywuzzy https://github.com/seatgeek/fuzzywuzzy
 
 python字符串模糊匹配Fuzzywuzzy https://blog.csdn.net/weixin_41413177/article/details/90300139
+
+#### 130_pycharm
+
+PyCharm 中文指南 http://pycharm.iswbm.com/zh_CN/latest/index.html
