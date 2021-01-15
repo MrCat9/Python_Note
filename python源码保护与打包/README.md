@@ -1,6 +1,7 @@
 # python源码保护与打包
 
 Python打包成exe https://mp.weixin.qq.com/s/yV9bP-bvrm-D96uwVfpSTA
+
 python文件或文本加密 https://blog.csdn.net/ccweb/article/details/86655226
 
 ## pyc  容易被破解
