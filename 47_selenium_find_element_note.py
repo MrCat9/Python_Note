@@ -44,6 +44,7 @@ browser.implicitly_wait(5)  # 隐式等待。如果找到，就继续执行，�
 
 browser.get('http://www.jobbole.com/')
 a = browser.find_element_by_class_name('the-latest')
+string_str = a.get_attribute('innerText')  # 取标签下的所有文本，类似于lxml的xpaht的string()  # https://www.cnblogs.com/chen/p/10931424.html
 aa = a.find_elements_by_tag_name('a')  # elements 可以迭代
 for temp in aa:
     print(temp.get_attribute('href'))

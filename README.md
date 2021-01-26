@@ -446,7 +446,6 @@ print(str1)
 
 
 
-
 47_selenium_find_element_note
 
 ```
@@ -454,6 +453,8 @@ find_element_by_xpath
 find_element_by_id
 find_element_by_class_name
 find_element_by_tag_name
+get_attribute('href')
+get_attribute('innerText')  # 取标签下的所有文本，类似于lxml的xpaht的string()  # https://www.cnblogs.com/chen/p/10931424.html
 ```
 
 
