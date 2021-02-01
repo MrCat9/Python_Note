@@ -284,16 +284,11 @@ https://blog.csdn.net/qq_20417499/article/details/80566265
 
 
 
-
 34_编写docx
 
-
-
+`python-docx`无法处理`doc`，可以考虑将`doc`转`docx` https://blog.csdn.net/weixin_42081389/article/details/108513828
 
 35_pdf转png
-
-
-
 
 36_python操作文件文件夹
 
