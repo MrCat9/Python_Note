@@ -284,7 +284,7 @@ https://blog.csdn.net/qq_20417499/article/details/80566265
 
 
 
-34_编写docx
+[34_python操作docx](https://github.com/MrCat9/Python_Note/tree/master/python_docx_test)
 
 `python-docx`无法处理`doc`，可以考虑将`doc`转`docx` https://blog.csdn.net/weixin_42081389/article/details/108513828
 
@@ -301,7 +301,6 @@ https://blog.csdn.net/qq_20417499/article/details/80566265
 
 
 38_布隆过滤器(Bloom Filter)_pybloom
-
 
 
 
@@ -1252,3 +1251,12 @@ python字符串模糊匹配Fuzzywuzzy https://blog.csdn.net/weixin_41413177/arti
 #### 130_pycharm
 
 PyCharm 中文指南 http://pycharm.iswbm.com/zh_CN/latest/index.html
+
+#### 131_python操作pptx
+
+[python-pptx官方文档](https://python-pptx.readthedocs.io/en/latest/index.html)
+
+用Python玩转PPT https://www.sohu.com/a/421290306_99979179
+
+#### [132_ppt转pptx](https://github.com/MrCat9/Python_Note/blob/master/ppt2pptx.py)
+
