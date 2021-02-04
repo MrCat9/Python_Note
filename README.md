@@ -1263,3 +1263,22 @@ PyCharm 中文指南 http://pycharm.iswbm.com/zh_CN/latest/index.html
 #### 133_正则表达式re
 
 正则表达式30分钟入门 https://deerchao.cn/tutorials/regex/regex.htm
+
+#### 134_python解析pdf
+
+`pymupdf/fitz` `pdfplumber` `pdfminer3k`
+
+> pdfminer3k是pdfminer的python3版本
+>
+> pdfplumber是对pdfminer的再封装，可以先安装pdfminer3k，再安装pdfplumber
+
+别再问如何用python提取PDF内容了 https://zhuanlan.zhihu.com/p/260670061
+
+PyMuPDF–超强的解析PDF的Python包 http://blog.yixao.net/share/12997.html
+
+pdf文本和表格处理——pdfplumber的安装与简单使用 https://blog.csdn.net/Elaine_jm/article/details/84841233
+
+Python处理pdf文件 - pdfminer、pdfplumber https://blog.csdn.net/weixin_42277380/article/details/98752212
+
+Python解析PDF提取文本及表格信息 https://blog.csdn.net/weixin_39181440/article/details/108404354
+
