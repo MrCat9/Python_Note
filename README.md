@@ -1260,3 +1260,6 @@ PyCharm 中文指南 http://pycharm.iswbm.com/zh_CN/latest/index.html
 
 #### [132_ppt转pptx](https://github.com/MrCat9/Python_Note/blob/master/ppt2pptx.py)
 
+#### 133_正则表达式re
+
+正则表达式30分钟入门 https://deerchao.cn/tutorials/regex/regex.htm
