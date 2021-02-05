@@ -1282,3 +1282,10 @@ Python处理pdf文件 - pdfminer、pdfplumber https://blog.csdn.net/weixin_42277
 
 Python解析PDF提取文本及表格信息 https://blog.csdn.net/weixin_39181440/article/details/108404354
 
+[135_去除字符串str中的空白符（空格/制表符/换行）](https://github.com/MrCat9/Python_Note/blob/master/str_util.py)
+
+```
+1. 使用 split 和 join
+2. 使用正则 re.sub
+```
+
