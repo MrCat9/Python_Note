@@ -1289,3 +1289,38 @@ Python解析PDF提取文本及表格信息 https://blog.csdn.net/weixin_39181440
 2. 使用正则 re.sub
 ```
 
+136_解决`zipfile`解压时中文乱码问题
+
+使用`gbk`替换`cp437`完成解码。
+
+在`zipfile`源码中搜索`cp437`，将源码中的
+
+```python
+filename = filename.decode('cp437')
+```
+
+替换为
+
+```python
+try:
+    filename = filename.decode('gbk')  # edit by MrCat9, if filename is Chinese.
+except:
+    filename = filename.decode('cp437')
+```
+
+将源码中的
+
+```python
+fname_str = fname.decode("cp437")
+```
+
+替换为
+
+```python
+try:
+    fname_str = fname.decode('gbk')  # edit by MrCat9, if filename is Chinese.
+except:
+    fname_str = fname.decode("cp437")
+```
+
+先尝试使用`gbk`进行解码，出错的话再用`cp437`
