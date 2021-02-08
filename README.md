@@ -1282,7 +1282,7 @@ Python处理pdf文件 - pdfminer、pdfplumber https://blog.csdn.net/weixin_42277
 
 Python解析PDF提取文本及表格信息 https://blog.csdn.net/weixin_39181440/article/details/108404354
 
-[135_去除字符串str中的空白符（空格/制表符/换行）](https://github.com/MrCat9/Python_Note/blob/master/str_util.py)
+#### [135_去除字符串str中的空白符（空格/制表符/换行）](https://github.com/MrCat9/Python_Note/blob/master/str_util.py)
 
 ```
 1. 使用 split 和 join
@@ -1291,7 +1291,7 @@ Python解析PDF提取文本及表格信息 https://blog.csdn.net/weixin_39181440
 
 #### 136_解决`zipfile`解压时中文乱码问题
 
-使用`gbk`替换`cp437`完成解码。
+使用`gbk`替换`cp437`完成解码。先尝试使用`gbk`进行解码，出错的话再用`cp437`。
 
 在`zipfile`源码中搜索`cp437`，将源码中的
 
@@ -1323,4 +1323,3 @@ except:
     fname_str = fname.decode("cp437")
 ```
 
-先尝试使用`gbk`进行解码，出错的话再用`cp437`
