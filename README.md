@@ -287,6 +287,7 @@ https://blog.csdn.net/qq_20417499/article/details/80566265
 [34_python操作docx](https://github.com/MrCat9/Python_Note/tree/master/python_docx_test)
 
 `python-docx`无法处理`doc`，可以考虑将`doc`转`docx` https://blog.csdn.net/weixin_42081389/article/details/108513828
+> 使用win32com时注意使用文件的绝对路径地址，否则容易报错。
 
 35_pdf转png
 
@@ -1321,5 +1322,18 @@ try:
     fname_str = fname.decode('gbk')  # edit by MrCat9, if filename is Chinese.
 except:
     fname_str = fname.decode("cp437")
+```
+
+#### 137_`win32com`报错
+
+> 使用win32com时注意使用文件的绝对路径地址，否则容易报错。
+
+报错 has no attribute 'CLSIDToClassMap' https://blog.csdn.net/weixin_45903952/article/details/105556034
+
+```python
+from win32com.client.gencache import EnsureDispatch
+import sys
+xl = EnsureDispatch("Word.Application")
+print(sys.modules[xl.__module__].__file__)
 ```
 
