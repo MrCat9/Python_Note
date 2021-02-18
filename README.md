@@ -9,7 +9,6 @@ python 文档 https://docs.python.org/3.6/index.html
 
 
 
-
 1_selenium在add_cookie之前要先get
 
 
@@ -21,7 +20,6 @@ python 文档 https://docs.python.org/3.6/index.html
 3_从list中取出元素
 
 `pop`,`append`,`for`
-
 
 
 
@@ -1352,13 +1350,17 @@ PyCharm的搜索与替换功能可以使用正则表达式
 
 爬虫一键加引号 http://pycharm.iswbm.com/zh_CN/latest/c05/c05_08.html
 
+#### 140_`rarfile`报错
 
+报错`rarfile.RarCannotExec: Cannot find working tool` https://www.pianshen.com/article/4453985052/
 
+> 将 unrar.exe 放到 .py 文件目录下。
 
+#### 141_python操作压缩包
 
+详解python操作压缩包的五种方法 https://www.jb51.net/article/164713.htm
 
-
-
+> .gz .tar .tgz .zip .rar
 
 
 
