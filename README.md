@@ -1341,3 +1341,24 @@ xl = EnsureDispatch("Word.Application")
 print(sys.modules[xl.__module__].__file__)
 ```
 
+#### 139_PyCharm给Headers加引号
+
+PyCharm的搜索与替换功能可以使用正则表达式
+
+```
+查找：(.*?):(.*)
+替换：'$1':'$2'
+```
+
+爬虫一键加引号 http://pycharm.iswbm.com/zh_CN/latest/c05/c05_08.html
+
+
+
+
+
+
+
+
+
+
+
