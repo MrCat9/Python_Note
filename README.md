@@ -1290,7 +1290,11 @@ Python解析PDF提取文本及表格信息 https://blog.csdn.net/weixin_39181440
 2. 使用正则 re.sub
 ```
 
-#### 136_解决`zipfile`解压时中文乱码问题
+#### 136_Python打包与解压zip
+
+https://blog.csdn.net/qq_24495287/article/details/84799512
+
+#### 137_解决`zipfile`解压时中文乱码问题
 
 使用`gbk`替换`cp437`完成解码。先尝试使用`gbk`进行解码，出错的话再用`cp437`。
 
@@ -1324,7 +1328,7 @@ except:
     fname_str = fname.decode("cp437")
 ```
 
-#### 137_`win32com`报错
+#### 138_`win32com`报错
 
 > 使用win32com时注意使用文件的绝对路径地址，否则容易报错。
 
