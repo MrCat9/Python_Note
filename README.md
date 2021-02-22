@@ -1354,7 +1354,11 @@ PyCharm的搜索与替换功能可以使用正则表达式
 
 报错`rarfile.RarCannotExec: Cannot find working tool` https://www.pianshen.com/article/4453985052/
 
-> 将 unrar.exe 放到 .py 文件目录下。
+> 方法一：将 unrar.exe 放到 venv\Scripts 目录下。
+>
+> 方法二：将 unrar.exe 放到 .py 文件目录下。
+>
+> 方法三：将unrar设为系统的环境变量。
 
 #### 141_python操作压缩包
 
