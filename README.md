@@ -1366,5 +1366,36 @@ PyCharm的搜索与替换功能可以使用正则表达式
 
 > .gz .tar .tgz .zip .rar
 
+#### 142_python调用cmd中文乱码
 
+```python
+os.system('chcp 65001')  # 防止中文乱码
+```
+
+在python上调用cmd中文乱码 https://blog.csdn.net/andy985897924/article/details/79187035
+
+#### 143_Windows下cmd目录带空格
+
+```
+用""把带空格的目录路径括起来，如：
+dir "C:\Program Files\"
+```
+
+关于Windows cmd下目录带空格的处理办法 https://blog.csdn.net/yandaonan/article/details/52047589
+
+#### 144_`os.system`阻塞
+
+```
+Linux -> nohup
+Windows -> start
+```
+
+执行os.system阻塞问题 https://blog.csdn.net/mr_li1/article/details/89353276
+
+#### 145_`PIL`报错`image file is truncated`
+
+```python
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True  # 处理报错 OSError: image file is truncated
+```
 
