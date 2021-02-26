@@ -1399,3 +1399,22 @@ from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True  # 处理报错 OSError: image file is truncated
 ```
 
+#### 146_python自动化
+
+```
+pyautogui  pywinauto  pywin32
+通常配合使用，pywinauto用于启动应用，pywin32用于定位窗口，pyautogui用于控制键鼠。
+```
+
+PC端应用程序自动化测试——pywinauto、pywin32、pyautogui https://blog.csdn.net/m0_37602827/article/details/108308991
+
+[pyautogui GitHub](https://github.com/asweigart/pyautogui)
+
+pyautogui自动化控制鼠标和键盘操作 https://blog.csdn.net/weixin_43430036/article/details/84650938
+
+pywinauto的简单使用 https://wlqsbyb.cn/1450
+
+
+
+
+
