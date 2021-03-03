@@ -1414,7 +1414,12 @@ pyautogui自动化控制鼠标和键盘操作 https://blog.csdn.net/weixin_43430
 
 pywinauto的简单使用 https://wlqsbyb.cn/1450
 
+#### 147_`pptx`报错`pptx.exc.PackageNotFoundError: Package not found at`
 
+```
+空白pptx文件会报PackageNotFoundError错误
+读取不存在的pptx文件时也会报PackageNotFoundError错误
+```
 
-
+python错误：docx.opc.exceptions.PackageNotFoundError: Package not found at 'new.docx'解决办法 https://blog.csdn.net/gaifuxi9518/article/details/81048108
 
