@@ -1423,3 +1423,11 @@ pywinauto的简单使用 https://wlqsbyb.cn/1450
 
 python错误：docx.opc.exceptions.PackageNotFoundError: Package not found at 'new.docx'解决办法 https://blog.csdn.net/gaifuxi9518/article/details/81048108
 
+#### 148_删除文件文件夹时报错`PermissionError: [WinError 5] 拒绝访问`
+
+```
+要删除的文件可能是只读文件，可以使用python执行cmd进行删除
+```
+
+Python 删除只读文件/文件夹报错：[WinError 5] 拒绝访问。 https://blog.csdn.net/COCO56/article/details/107061932/
+
