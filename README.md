@@ -1431,3 +1431,22 @@ python错误：docx.opc.exceptions.PackageNotFoundError: Package not found at 'n
 
 Python 删除只读文件/文件夹报错：[WinError 5] 拒绝访问。 https://blog.csdn.net/COCO56/article/details/107061932/
 
+#### 149_Mockoon
+
+快速搭建模拟api服务
+
+[GitHub地址](https://github.com/mockoon/mockoon)
+
+https://mp.weixin.qq.com/s/daA6UCmrnQIJU7KegXQU1g
+
+#### 150_FastAPI
+
+快速python web框架
+
+[GitHub地址](https://github.com/github-lab/fastapi)
+
+[官方文档](https://fastapi.tiangolo.com/)
+
+Python Web 框架之FastAPI https://www.jianshu.com/p/d01d3f25a2af
+
+Python web框架FastAPI https://www.cnblogs.com/dcpeng/p/12716550.html
