@@ -1450,3 +1450,24 @@ https://mp.weixin.qq.com/s/daA6UCmrnQIJU7KegXQU1g
 Python Web 框架之FastAPI https://www.jianshu.com/p/d01d3f25a2af
 
 Python web框架FastAPI https://www.cnblogs.com/dcpeng/p/12716550.html
+
+#### 151_将控制台输出保存至文件
+
+```python
+import sys
+f = open('log_dir/test_log.log', 'a')  # log_dir文件夹需要先创建
+sys.stdout = f
+sys.stderr = f
+
+print(1)
+print('hello')
+1/0
+
+f.close()
+```
+
+python将控制台输出保存至文件 https://blog.csdn.net/u010158659/article/details/81671901
+
+#### 152_Win10设置定时运行任务
+
+Win10设置定时运行任务 https://zhuanlan.zhihu.com/p/115187442
