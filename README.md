@@ -1471,3 +1471,30 @@ python将控制台输出保存至文件 https://blog.csdn.net/u010158659/article
 #### 152_Win10设置定时运行任务
 
 Win10设置定时运行任务 https://zhuanlan.zhihu.com/p/115187442
+
+#### 153_`labelImg`
+
+[GitHub地址](https://github.com/tzutalin/labelImg)
+
+- 安装
+
+  创建`pycharm`工程`my_LabelImg`，在`terminal`下执行
+
+```
+# 安装需要的包
+(venv) D:\pycharm-professional-2019.3.3\admin\my_LabelImg>pip install PyQt5
+(venv) D:\pycharm-professional-2019.3.3\admin\my_LabelImg>pip install pyqt5-tools
+(venv) D:\pycharm-professional-2019.3.3\admin\my_LabelImg>pip install lxml
+(venv) D:\pycharm-professional-2019.3.3\admin\my_LabelImg>pip install labelImg
+
+# 运行 labelImg
+(venv) D:\pycharm-professional-2019.3.3\admin\my_LabelImg>labelImg
+```
+
+- 使用
+
+`Open Dir` 选择输入文件夹
+
+`Change Save Dir` 选择输出文件夹
+
+#### 154_
