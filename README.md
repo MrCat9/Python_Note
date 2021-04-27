@@ -1217,7 +1217,7 @@ https://github.com/klionsec/SuperWordlist
 
 #### 124_更新pip版本
 
-Windows下 `python -m pip install --upgrade pip`
+Windows下 ~~`python -m pip install --upgrade pip`~~`easy_install -U pip`
 
 Linux下 `pip install --upgrade pip`
 
