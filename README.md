@@ -1537,3 +1537,38 @@ pip安装失败时尝试更新`pip`和`setuptools`
 
 `pip install protobuf`
 
+#### 159_报错`ImportError: DLL load failed: 找不到指定的模块。`
+
+> DLL load failed 一般是由于
+>
+> 1.包损坏    2.python和包版本的问题
+>
+> 因此先尝试 pip uninstall 再 pip install 重装包
+>
+> 再考虑版本匹配问题
+
+在Windows10+python3.7.9环境下安装`PPOCRLabel`
+pyclipper==1.2.1 时
+执行 `python PPOCRLabel.py --lang ch` 报错如下
+
+```
+Traceback (most recent call last):
+  File "PPOCRLabel.py", line 35, in <module>
+    from paddleocr import PaddleOCR
+  File "..\paddleocr.py", line 28, in <module>
+    from tools.infer import predict_system
+  File "..\tools\infer\predict_system.py", line 31, in <module>
+    import tools.infer.predict_det as predict_det
+  File "..\tools\infer\predict_det.py", line 31, in <module>
+    from ppocr.data import create_operators, transform
+  File "..\ppocr\data\__init__.py", line 34, in <module>
+    from ppocr.data.imaug import transform, create_operators
+  File "..\ppocr\data\imaug\__init__.py", line 20, in <module>
+    from .make_border_map import MakeBorderMap
+  File "..\ppocr\data\imaug\make_border_map.py", line 12, in <module>
+    import pyclipper
+ImportError: DLL load failed: 找不到指定的模块。
+```
+
+切换为 pyclipper==1.2.0 后正常运行。
+
