@@ -1472,7 +1472,7 @@ python将控制台输出保存至文件 https://blog.csdn.net/u010158659/article
 
 Win10设置定时运行任务 https://zhuanlan.zhihu.com/p/115187442
 
-#### 153_`labelImg`
+#### 153_图像数据集标注工具`labelImg`
 
 [GitHub地址](https://github.com/tzutalin/labelImg)
 
@@ -1497,16 +1497,43 @@ Win10设置定时运行任务 https://zhuanlan.zhihu.com/p/115187442
 
 `Change Save Dir` 选择输出文件夹
 
-#### 154_安装`python-Levenshtein`报错
+#### 154_半自动化OCR图像数据集标注工具`PPOCRLabel`
+
+https://github.com/PaddlePaddle/PaddleOCR/blob/dygraph/PPOCRLabel/README_ch.md
+
+#### 155_安装`python-Levenshtein`报错
 
 ```
-error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": http://landinghub.visualstudio.com/visual-cpp-build-tools
+error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/
 ```
 
 在 https://www.lfd.uci.edu/~gohlke/pythonlibs/ 上下载 `whl` ，通过 `whl` 安装
 
+https://pypi.org/ 上有官方的 `whl`
+
 python3.6 + win10 安装 python-Levenshtein 错误记录 https://blog.csdn.net/sky_limitless/article/details/90291893
 
-#### 155_`Microsoft Visual C++ Build Tools`安装
+#### 156_`Microsoft Visual C++ Build Tools`安装
 
 https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/
+
+> 安装PaddleOCR时报错 
+>
+> error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/
+>
+> 在安装了 Microsoft Visual C++ 14.0 后报错并没有解决，最后是将py36换为py37后解决报错。
+
+对于报错 `Microsoft Visual C++ 14.0 is required.`
+
+1. 尝试使用 `whl` 安装。
+2. 检查环境（python版本什么的）。
+3. 使用 `Microsoft Visual C++ Build Tools` 安装。
+
+#### 157_pip安装失败时
+
+pip安装失败时尝试更新`pip`和`setuptools`
+
+#### 158_报错`No module named 'google'`
+
+`pip install protobuf`
+
