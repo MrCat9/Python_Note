@@ -1572,3 +1572,8 @@ ImportError: DLL load failed: 找不到指定的模块。
 
 切换为 pyclipper==1.2.0 后正常运行。
 
+#### 160_重试模块`retrying`
+
+https://github.com/rholder/retrying
+
+Python重试模块retrying https://www.cnblogs.com/mangM/p/11207202.html
