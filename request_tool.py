@@ -3,6 +3,7 @@
 
 from selenium import webdriver
 import requests
+from retrying import retry
 import re
 import eventlet
 import time
@@ -11,7 +12,7 @@ import random
 import w3lib.html
 
 from settings import CHROMEDRIVER_EXECUTABLE_PATH, SELENIUM_IMPLICITLY_WAIT
-from settings import REQUESTS_TIMEOUT
+from settings import REQUESTS_TIMEOUT, RETRY_TIMES
 
 
 # # selenium
@@ -98,6 +99,18 @@ def requests_init():
     return params, headers, proxies, timeout
 
 
+def retry_if_timeout(exception):
+    if isinstance(exception, requests.exceptions.ConnectTimeout):
+        print('requests.exceptions.ConnectTimeout')
+        return True
+    if isinstance(exception, requests.exceptions.ReadTimeout):
+        print('requests.exceptions.ReadTimeout')
+        return True
+    return False
+
+
+# timeout的话重试5次
+@retry(stop_max_attempt_number=RETRY_TIMES, retry_on_exception=retry_if_timeout, wait_random_min=1, wait_random_max=5)
 def requests_get_url(url):
     # ================================ 生成 requests 的 get 方法的参数 ================================
     params, headers, proxies, timeout = requests_init()  # 可在 requests_init 方法中写 获取随机UA头，代理IP
