@@ -1585,3 +1585,81 @@ Python重试模块retrying https://www.cnblogs.com/mangM/p/11207202.html
 #### [162_img2pdf](https://github.com/MrCat9/Python_Note/blob/master/img2pdf.py)
 
 图片转pdf
+
+#### 163_报错`UnicodeEncodeError`
+
+```
+如果遇到类似"UnicodeEncodeError: 'gbk' codec can't encode character '\xa5' in position 46: illegal multibyte sequence"这样的问题，读取文件时已经用了encoding='utf8'，还是报错，而且报错的位置含有print()，那可能是因为print()函数自身有限制，不能完全打印所有的unicode字符，所以只要规定一下print的打印的默认编码就行了：
+```
+
+```python
+import io
+import sys
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')  # 改变标准输出的默认编码
+```
+
+#### [164_`list`的复制](https://github.com/MrCat9/Python_Note/blob/master/list_copy.py)
+
+```
+list复制的时候注意是否影响原list
+
+如果用 = 直接赋值，是非拷贝方法。
+这两个列表是等价的，修改其中任何一个列表都会影响到另一个列表。
+
+浅拷贝可以使用copy()，切片，列表生成式，for循环遍历等。推荐copy()
+
+深拷贝可以使用deepcopy()
+
+一般使用copy()
+```
+
+[Python中List的复制（直接复制、浅拷贝、深拷贝）](https://blog.csdn.net/qq_24502469/article/details/104185122)
+
+#### 165_分割文件路径，文件名，格式（扩展/后缀）
+
+```python
+import os
+
+test_file_path = 'D:/repository/Python_Note/split_fp_fn_fe.py'
+(file_dir, file_name) = os.path.split(test_file_path)
+print(file_dir)  # D:/repository/Python_Note
+print(file_name)  # split_fp_fn_fe.py
+(file_name2, extension) = os.path.splitext(file_name)
+print(file_name2)  # split_fp_fn_fe
+print(extension)  # .py
+```
+
+#### 166_类的__init__、__enter__、__exit__、__del__在with下的表现
+
+[深挖python上下文管理——类的__init__、__enter__、__exit__、__del__在with下的表现](https://blog.csdn.net/qq_27884799/article/details/101535569)
+
+#### 167_使用`smtplib`发送邮件时报错
+
+```python
+import smtplib
+
+#py37
+my_sender = smtplib.SMTP_SSL(host='smtp.sina.com')  # 端口为465  # py37
+my_sender.connect('smtp.sina.com', 465)  # 465有用SSL
+
+# py36
+my_sender = smtplib.SMTP_SSL()  # 端口为465  # py36
+my_sender.connect('smtp.sina.com', 465)  # 465有用SSL
+```
+
+[server_hostname cannot be an empty string or start with a leading dot.](https://blog.csdn.net/siweigesiweige/article/details/86167493)
+
+#### 168_使用`smtplib`发送邮件时报错
+
+```python
+# 方法一：设置更长的超时时间
+import smtplib
+my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465  # py37
+
+# 方法二：对文件进行压缩
+```
+
+[python发送邮件超时： smtplib.SMTPDataError: (451, b'Error: queue file write error')](https://blog.csdn.net/dare_kz/article/details/111882797)
+
+#### [169_email_sender](https://github.com/MrCat9/Python_Note/blob/master/email_sender.py)
+
