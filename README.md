@@ -1598,7 +1598,7 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')  # 改变标准输出的默认编码
 ```
 
-#### [164_`list`的复制](https://github.com/MrCat9/Python_Note/blob/master/list_copy.py)
+#### [164_`list`的复制](https://github.com/MrCat9/Python_Note/blob/master/list_copy.ipynb)
 
 ```
 list复制的时候注意是否影响原list
