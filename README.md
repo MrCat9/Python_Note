@@ -1663,3 +1663,9 @@ my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465 
 
 #### [169_email_sender](https://github.com/MrCat9/Python_Note/blob/master/email_sender.py)
 
+#### [170_`Linux`下安装配置`virtualenv`和`virtualenvwrapper`](https://github.com/MrCat9/Python_Note/blob/master/install_virtualenv_virtualenvwrapper4linux.md)
+
+#### [170_1_`Linux`下安装配置`virtualenvwrapper`报错`/usr/bin/python: No module named virtualenvwrapper`](https://github.com/MrCat9/Python_Note/blob/master/install_virtualenv_virtualenvwrapper4linux.md)
+
+
+
