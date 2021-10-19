@@ -1613,6 +1613,24 @@ list复制的时候注意是否影响原list
 一般使用copy()
 ```
 
+```python
+# -*- coding: utf-8 -*-
+
+
+def add_item(item, source_list):
+    source_list.append(item)
+
+
+list1 = [0, 1]
+add_item(2, list1)
+print(list1)  # [0, 1, 2]
+
+# 函数参数传递的是实际对象的内存地址。
+# 如果参数是引用类型的数据类型（列表、字典等），
+# 在函数内部修改后，就算没有把修改后的值返回回去，
+# 外面的值其实也已经发生了变化。
+```
+
 [Python中List的复制（直接复制、浅拷贝、深拷贝）](https://blog.csdn.net/qq_24502469/article/details/104185122)
 
 #### 165_分割文件路径，文件名，格式（扩展/后缀）
