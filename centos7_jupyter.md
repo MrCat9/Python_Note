@@ -3,7 +3,7 @@
 1. 新建虚拟环境，作为jupyter服务的运行环境
 
     ```
-    [user001@xxxx ~]$ mkvirtualenv venv_jupyter
+    [user001@xxxx ~]$ mkvirtualenv my_jupyter
     ```
 
 2. 安装jupyter服务运行的依赖包
@@ -18,7 +18,7 @@
     (venv_jupyter) [user001@xxxx ~]$ jupyter notebook --generate-config
     ```
 
-    > 生成的config file在/user0001/.jupyter/jupyter_notebook_config.py
+    > 生成的config file在/home/user0001/.jupyter/jupyter_notebook_config.py
 
 4. 生成jupyter的访问密码
 
