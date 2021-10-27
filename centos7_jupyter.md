@@ -9,13 +9,13 @@
 2. 安装jupyter服务运行的依赖包
 
     ```
-    (venv_jupyter) [user001@xxxx ~]$ pip install ipython jupyter notebook
+    (my_jupyter) [user001@xxxx ~]$ pip install ipython jupyter notebook
     ```
 
 3. 生成配置文件
 
     ```
-    (venv_jupyter) [user001@xxxx ~]$ jupyter notebook --generate-config
+    (my_jupyter) [user001@xxxx ~]$ jupyter notebook --generate-config
     ```
 
     > 生成的config file在/home/user0001/.jupyter/jupyter_notebook_config.py
@@ -23,7 +23,7 @@
 4. 生成jupyter的访问密码
 
     ```
-    (venv_jupyter) [user001@xxxx ~]$ python
+    (my_jupyter) [user001@xxxx ~]$ python
 
     >>> from notebook.auth import passwd
     >>> passwd('123456')
@@ -34,7 +34,7 @@
 5. 编辑jupyter的配置文件
 
     ```
-    (venv_jupyter) [user001@xxxx ~]$ vim /root/.jupyter/jupyter_notebook_config.py
+    (my_jupyter) [user001@xxxx ~]$ vim /root/.jupyter/jupyter_notebook_config.py
     ```
 
     ```
@@ -47,13 +47,13 @@
 6. 启动jupyter服务
 
     ```
-    (venv_jupyter) [user001@xxxx ~]$ jupyter notebook &
+    (my_jupyter) [user001@xxxx ~]$ jupyter notebook &
     ```
 
 7. 退出虚拟环境
 
     ```
-    (venv_jupyter) [user001@xxxx ~]$ deactivate
+    (my_jupyter) [user001@xxxx ~]$ deactivate
     ```
 
 8. 退出服务器连接
