@@ -34,7 +34,7 @@
 5. 编辑jupyter的配置文件
 
     ```
-    (my_jupyter) [user001@xxxx ~]$ vim /root/.jupyter/jupyter_notebook_config.py
+    (my_jupyter) [user001@xxxx ~]$ vim /home/user001/.jupyter/jupyter_notebook_config.py
     ```
 
     ```
