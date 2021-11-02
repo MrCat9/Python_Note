@@ -1685,5 +1685,7 @@ my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465 
 
 #### [170_1_`Linux`下安装配置`virtualenvwrapper`报错`/usr/bin/python: No module named virtualenvwrapper`](https://github.com/MrCat9/Python_Note/blob/master/install_virtualenv_virtualenvwrapper4linux.md)
 
+#### [171_pycharm连接远程服务器](https://github.com/MrCat9/Python_Note/blob/pycharm_connect_remote_server/README.md)
 
+[pycharm远程连接服务器运行代码加调试](https://blog.csdn.net/yeler082/article/details/83818771)
 
