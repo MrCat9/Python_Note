@@ -203,7 +203,10 @@ def selenium_get_url(url, browser=None):
         # for handle in all_handles:
         #     if handle != current_window:
         #         browser.switch_to.window(handle)
-
+        
+        # # 切换到 iframe 下
+        # browser.switch_to.frame('iframe_id')
+        
         html_str = browser.page_source
 
         if not use_def_browser:
