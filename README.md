@@ -1689,3 +1689,8 @@ my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465 
 
 [pycharm远程连接服务器运行代码加调试](https://blog.csdn.net/yeler082/article/details/83818771)
 
+#### 172_提取中文地址描述中的省市区信息
+
+[GitHub地址](https://github.com/DQinYuan/chinese_province_city_area_mapper)
+
+[使用python提取中文地址描述中的省市区信息](https://blog.csdn.net/qq_33256688/article/details/79445792)
