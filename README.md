@@ -1694,3 +1694,23 @@ my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465 
 [GitHub地址](https://github.com/DQinYuan/chinese_province_city_area_mapper)
 
 [使用python提取中文地址描述中的省市区信息](https://blog.csdn.net/qq_33256688/article/details/79445792)
+
+#### [173_anaconda](https://www.cnblogs.com/xiongmozhou/p/9368992.html)
+
+[centos中安装anaconda](https://blog.csdn.net/weixin_44422604/article/details/107743276)
+
+[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
+
+[anaconda与python版本对应关系](https://docs.anaconda.com/anaconda/packages/oldpkglists/)
+
+[终端出现"(base)"](https://blog.csdn.net/Just_youHG/article/details/104686642/)
+
+[Anaconda命令行常用操作](https://zhuanlan.zhihu.com/p/195858834)
+
+[linux使用Anaconda管理多个版本的Python环境](https://www.cnblogs.com/xiongmozhou/p/9368992.html)
+
+> 可以在创建虚拟环境时，指定python版本
+> conda create --name tmp_py37 python=3.7.9
+
+[anaconda3安装及jupyter环境配置教程](https://www.cnblogs.com/chenhuabin/p/13551941.html)
+
