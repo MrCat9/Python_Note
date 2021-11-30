@@ -452,23 +452,17 @@ get_attribute('innerText')  # 取标签下的所有文本，类似于lxml的xpah
 
 
 
+#### 48_selenium_使用随机UA头
 
-48_selenium_使用随机UA头
-
-
-
-
-49_Python3操作Elasticsearch
+#### 49_Python3操作Elasticsearch
 
 ```
 Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126327/article/details/81285487
 ```
 
+#### 50_newspaper3k设置useragent_proxies_headers
 
-
-50_newspaper3k设置useragent_proxies_headers
-
-50_2_将外部请求下来的html源码给newspaper解析
+#### 50_2_将外部请求下来的html源码给newspaper解析
 
 可以给外部的请求加 useragent,proxies 等
 
@@ -476,24 +470,19 @@ Python3操作Elasticsearch进行增删改查  https://blog.csdn.net/weixin_42126
 news.download(input_html=html_str)
 ```
 
-
-
-
 #### [51_re_正则匹配网页源码中的_日期时间（新闻发布时间）](https://github.com/MrCat9/Python_Note/blob/master/parser_tool.py)
 
+#### [51_1_dateparser日期时间解析](https://github.com/scrapinghub/dateparser)
 
+#### [51_2_price-parser价格解析](https://github.com/scrapinghub/price-parser/)
 
-
-52_装饰器
+#### 52_装饰器
 
 ```
 https://blog.csdn.net/qq_42156420/article/details/81169554
 ```
 
-
-
-
-53_urllib
+#### 53_urllib
 
 ```
 url 拼接
