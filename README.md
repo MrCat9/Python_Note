@@ -1681,8 +1681,8 @@ my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465 
 #### 172_提取中文地址描述中的省市区信息
 
 ```
-conda install pyahocorasick  # 先安装pyahocorasick
-pip install cpca
+conda install -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ pyahocorasick  # 先安装pyahocorasick
+pip install -i https://pypi.doubanio.com/simple/ cpca
 ```
 
 [GitHub地址](https://github.com/DQinYuan/chinese_province_city_area_mapper)
