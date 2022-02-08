@@ -1708,3 +1708,16 @@ pip install -i https://pypi.doubanio.com/simple/ cpca
 
 [anaconda3安装及jupyter环境配置教程](https://www.cnblogs.com/chenhuabin/p/13551941.html)
 
+[报错_CondaHTTPError: HTTP 000 CONNECTION FAILED for url](https://blog.csdn.net/u013383596/article/details/87718472)
+
+1. 编辑`.condarc`文件（直接编辑文件或者使用命令行添加删除channels），使用清华镜像。
+2. 删除`.condarc`文件里的`defaults`。
+3. `.condarc`文件里的`conda-forge`看情况删除。
+
+[报错_json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 41 (char 40)](https://stackoverflow.com/questions/61134985/conda-install-packages-error-collecting-package-metadata-current-repodata-json)
+
+1.  执行`conda clean -i`。
+2. 执行`conda config --show-sources`找到 `.condarc`文件位置，删除。
+3. 执行`conda config --set show_channel_urls true`重新生成`.condarc`文件。
+4. 编辑`.condarc`文件，使用清华镜像。
+
