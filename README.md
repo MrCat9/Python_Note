@@ -1678,18 +1678,7 @@ my_sender = smtplib.SMTP_SSL(host='smtp.sina.com', timeout=600)  # 端口为465 
 
 [pycharm远程连接服务器运行代码加调试](https://blog.csdn.net/yeler082/article/details/83818771)
 
-#### 172_提取中文地址描述中的省市区信息
-
-```
-conda install -c http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ pyahocorasick  # 先安装pyahocorasick
-pip install -i https://pypi.doubanio.com/simple/ cpca
-```
-
-[GitHub地址](https://github.com/DQinYuan/chinese_province_city_area_mapper)
-
-[使用python提取中文地址描述中的省市区信息](https://blog.csdn.net/qq_33256688/article/details/79445792)
-
-#### [173_anaconda](https://www.cnblogs.com/xiongmozhou/p/9368992.html)
+#### [172_anaconda](https://www.cnblogs.com/xiongmozhou/p/9368992.html)
 
 [centos中安装anaconda](https://blog.csdn.net/weixin_44422604/article/details/107743276)
 
@@ -1720,4 +1709,63 @@ pip install -i https://pypi.doubanio.com/simple/ cpca
 2. 执行`conda config --show-sources`找到 `.condarc`文件位置，删除。
 3. 执行`conda config --set show_channel_urls true`重新生成`.condarc`文件。
 4. 编辑`.condarc`文件，使用清华镜像。
+
+#### 173_提取中文地址描述中的省市区信息
+
+```
+conda install -c http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ pyahocorasick  # 先安装pyahocorasick
+pip install -i https://pypi.doubanio.com/simple/ cpca
+```
+
+[GitHub地址](https://github.com/DQinYuan/chinese_province_city_area_mapper)
+
+[使用python提取中文地址描述中的省市区信息](https://blog.csdn.net/qq_33256688/article/details/79445792)
+
+#### 174_字符串模式匹配算法KMP算法
+
+> KMP算法在模式串与主串之间存在许多“部分匹配”的情况下效果较好。
+
+[字符串模式匹配KMP算法详解](https://blog.csdn.net/qq_16137569/article/details/81740425)
+
+[KMP模式匹配算法](https://blog.csdn.net/u011438608/article/details/13362221)
+
+python实现[KMP.py](https://github.com/MrCat9/Python_Note/blob/master/AC_Automaton.py)
+
+#### 175_Trie树（字典树）
+
+> 用于字符串检索、文本预测补全、词频统计等。
+
+[字典树(前缀树)](https://blog.csdn.net/weixin_39778570/article/details/81990417)
+
+[Trie树学习及python实现](https://www.cnblogs.com/caoer/p/14621859.html)
+
+[Trie（前缀树/字典树）及其应用 ](https://www.cnblogs.com/bonelee/p/8830825.html)
+
+#### 176_多模式匹配算法AC自动机(Aho-Corasick Automaton)
+
+> 在python中对应的包为ahocorasick
+
+[模式匹配Aho-Corasick自动机 ](https://www.cnblogs.com/en-heng/p/5247903.html)
+
+python实现[AC_Automaton.py](https://github.com/MrCat9/Python_Note/blob/master/AC_Automaton.py)
+
+[python ahocorasick介绍](https://blog.csdn.net/u010569893/article/details/97136696)
+
+[177_倒排索引](https://www.cnblogs.com/zlslch/p/6440114.html)
+
+#### 178_哈夫曼树及哈夫曼编码
+
+[哈夫曼树及哈夫曼编码](https://blog.51cto.com/u_15080030/3903509)
+
+[哈夫曼（huffman）树和哈夫曼编码](https://www.cnblogs.com/kubixuesheng/p/4397798.html)
+
+> 给定n个权值作为n个叶子结点，构造一棵二叉树，若带权路径长度达到最小，称这样的二叉树为最优二叉树，也称为哈夫曼树(Huffman Tree)。哈夫曼树是带权路径长度最短的树，权值较大的结点离根较近。
+>
+> 若要设计长短不等的编码，则必须是任一字符的编码都不是另一个字符的编码的前缀，这种编码称作前缀编码。
+>
+> 例：电报数据编码，各个字母出现的频率作为权重，实现数据压缩。可以用哈夫曼树设计总长最短的二进制前缀编码。
+
+
+
+
 
