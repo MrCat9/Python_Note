@@ -1744,6 +1744,8 @@ python实现[KMP.py](https://github.com/MrCat9/Python_Note/blob/master/AC_Automa
 #### 176_多模式匹配算法AC自动机(Aho-Corasick Automaton)
 
 > 在python中对应的包为ahocorasick
+>
+> conda install -c http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ pyahocorasick
 
 [模式匹配Aho-Corasick自动机 ](https://www.cnblogs.com/en-heng/p/5247903.html)
 
@@ -1765,7 +1767,9 @@ python实现[AC_Automaton.py](https://github.com/MrCat9/Python_Note/blob/master/
 >
 > 例：电报数据编码，各个字母出现的频率作为权重，实现数据压缩。可以用哈夫曼树设计总长最短的二进制前缀编码。
 
+#### 179_中国行政区划
 
+https://github.com/modood/Administrative-divisions-of-China
 
-
+https://github.com/wecatch/china_regions
 
