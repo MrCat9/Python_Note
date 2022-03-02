@@ -1775,5 +1775,11 @@ https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov
 
 https://github.com/wecatch/china_regions
 
+[国家统计局-统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
+
+[民政部-行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/1980/)
+
+[民政部-全国行政区划信息查询平台](http://xzqh.mca.gov.cn/map)
+
 #### [180_python带参数运行`argparse`](https://docs.python.org/zh-cn/3/library/argparse.html#)
 
