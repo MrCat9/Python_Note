@@ -1771,6 +1771,8 @@ python实现[AC_Automaton.py](https://github.com/MrCat9/Python_Note/blob/master/
 
 https://github.com/modood/Administrative-divisions-of-China
 
+https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov
+
 https://github.com/wecatch/china_regions
 
 #### [180_python带参数运行`argparse`](https://docs.python.org/zh-cn/3/library/argparse.html#)
