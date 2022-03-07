@@ -1783,3 +1783,25 @@ https://github.com/wecatch/china_regions
 
 #### [180_python带参数运行`argparse`](https://docs.python.org/zh-cn/3/library/argparse.html#)
 
+##### 181_python制作互动地图
+
+[Python绘制地图神器folium入门](https://blog.csdn.net/weixin_38169413/article/details/104806257)
+
+[Python + folium 制作美美的地图](https://mp.weixin.qq.com/s/hfXuNW5CrXW0zD6PPWcQEg)
+
+[Folium文档](http://python-visualization.github.io/folium/index.html)
+
+> 可以通过地图tiles的URL调用第三方地图底图
+>
+> 天地图
+>
+> 高德地图
+>
+> 百度地图
+>
+> 腾讯地图
+>
+> [kepler.gl](https://kepler.gl/)
+>
+> 智图GeoQ
+
