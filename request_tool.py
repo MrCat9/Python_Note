@@ -5,7 +5,7 @@ from selenium import webdriver
 import requests
 from retrying import retry
 import re
-import eventlet
+# import eventlet
 import time
 from datetime import datetime
 import random
@@ -77,26 +77,38 @@ ua_list = [
 ]
 
 
-def requests_init():
-    params = {}
+def requests_init(params=None, headers=None, proxies=None, timeout=None):
+    if params:
+        _params = params
+    else:
+        _params = {}
 
-    headers = {
-        # 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
-        'User-Agent': random.choice(ua_list),
-        # 'User-Agent': get_ua(),  # 获取随机 UA头
-    }
+    if headers:
+        _headers = headers
+    else:
+        headers = {
+            # 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+            'User-Agent': random.choice(ua_list),
+            # 'User-Agent': get_ua(),  # 获取随机 UA头
+        }
 
     # ip, port = get_proxy_ip()  # 获取随机 代理IP
     # ip, port = ('116.196.81.58', '3128')
-    # proxies = {
+    # _proxies = {
     #     'http': 'http://{}:{}'.format(ip, port),
     #     'https': 'http://{}:{}'.format(ip, port),
     # }
-    proxies = {}  # 不使用代理
+    if proxies:
+        _proxies = proxies
+    else:
+        _proxies = {}  # 不使用代理
 
-    timeout = REQUESTS_TIMEOUT
+    if timeout:
+        _timeout = timeout
+    else:
+        _timeout = REQUESTS_TIMEOUT
 
-    return params, headers, proxies, timeout
+    return _params, _headers, _proxies, _timeout
 
 
 def retry_if_timeout(exception):
@@ -106,28 +118,34 @@ def retry_if_timeout(exception):
     if isinstance(exception, requests.exceptions.ReadTimeout):
         print('requests.exceptions.ReadTimeout')
         return True
+    if isinstance(exception, requests.exceptions.ConnectionError):
+        print('requests.exceptions.ConnectionError')
+        return True
+    if isinstance(exception, requests.exceptions.ChunkedEncodingError):
+        print('requests.exceptions.ChunkedEncodingError')
+        return True
     return False
 
 
 # timeout的话重试5次
 @retry(stop_max_attempt_number=RETRY_TIMES, retry_on_exception=retry_if_timeout, wait_random_min=1, wait_random_max=5)
-def requests_get_url(url):
+def requests_get_url(url, params=None, headers=None, proxies=None, timeout=None):
     # ================================ 生成 requests 的 get 方法的参数 ================================
-    params, headers, proxies, timeout = requests_init()  # 可在 requests_init 方法中写 获取随机UA头，代理IP
+    _params, _headers, _proxies, _timeout = requests_init()  # 可在 requests_init 方法中写 获取随机UA头，代理IP
     # =================================================================================================
 
     # ================================ 请求网页 ================================
-    # response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
-    # html_str = response.text
-    eventlet.monkey_patch()
-    try:
-        with eventlet.Timeout(timeout * 2):  # 限制网页请求和源码计算的总时长
-            response = requests.get(url=url, params=params, headers=headers, proxies=proxies, timeout=timeout)
-            html_str = response.text
-    except:
-        print('[eventlet.Timeout][request_tool][', datetime.now(), '][msg:][url:', url, ']')
-    if not response or not html_str:
-        raise Exception('eventlet.Timeout')
+    response = requests.get(url=url, params=_params, headers=_headers, proxies=_proxies, timeout=_timeout)
+    html_str = response.text
+    # eventlet.monkey_patch()
+    # try:
+    #     with eventlet.Timeout(_timeout * 2):  # 限制网页请求和源码计算的总时长
+    #         response = requests.get(url=url, params=_params, headers=_headers, proxies=_proxies, timeout=_timeout)
+    #         html_str = response.text
+    # except:
+    #     print('[eventlet.Timeout][request_tool][', datetime.now(), '][msg:][url:', url, ']')
+    # if not response or not html_str:
+    #     raise Exception('eventlet.Timeout')
     # ==========================================================================
 
     # ================================ 设置网页编码 ================================
