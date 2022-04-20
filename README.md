@@ -1805,3 +1805,7 @@ https://github.com/wecatch/china_regions
 >
 > 智图GeoQ
 
+#### 182_app爬虫
+
+[APP爬虫思路与资料集](https://zhuanlan.zhihu.com/p/343303142)
+
