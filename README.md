@@ -1809,3 +1809,7 @@ https://github.com/wecatch/china_regions
 
 [APP爬虫思路与资料集](https://zhuanlan.zhihu.com/p/343303142)
 
+#### [183_python自动解密解码`Ciphey`](https://github.com/Ciphey/Ciphey/)
+
+[Python 全自动解密解码神器 — Ciphey](https://mp.weixin.qq.com/s/RkALeRwuH4MkDAswywaarw)
+
