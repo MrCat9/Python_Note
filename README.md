@@ -1813,3 +1813,12 @@ https://github.com/wecatch/china_regions
 
 [Python 全自动解密解码神器 — Ciphey](https://mp.weixin.qq.com/s/RkALeRwuH4MkDAswywaarw)
 
+#### 184_交互可视化pyecharts
+
+https://github.com/pyecharts/pyecharts
+
+https://gallery.pyecharts.org/#/
+
+https://pyecharts.org/#/
+
+https://echarts.apache.org/examples/zh/index.html
