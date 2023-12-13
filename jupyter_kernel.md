@@ -6,6 +6,11 @@
     [user001@xxxx ~]$ mkvirtualenv venv_my_project
     ```
 
+    ```
+    # conda 新建python虚拟环境
+    [user001@xxxx ~]$ conda create --name tmp_py310 python=3.10
+    ```
+
 2. 安装`ipykernel`
 
     ```
