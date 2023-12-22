@@ -1826,9 +1826,9 @@ https://echarts.apache.org/examples/zh/index.html
 #### 185_工作日_节假日
 
 + 库
-    + [chinesecalendar](https://github.com/LKI/chinese-calendar) `该库会在每年11月左右更新下一年的节假日，需定期升级库`
+    + [chinesecalendar](https://github.com/LKI/chinese-calendar)  `该库会在每年11月左右更新下一年的节假日，需定期升级库`  [热更新方案](https://github.com/LKI/chinese-calendar/issues/42)
 + 离线数据
-    * https://gitee.com/chenkji/holiday-cn
-    * https://github.com/NateScarlet/holiday-cn
+    * <https://gitee.com/chenkji/holiday-cn>
+    * <https://github.com/NateScarlet/holiday-cn>
 + 在线接口
     * [接口坞](https://zhuanlan.zhihu.com/p/343863993)    [文档](http://doc.apihubs.cn/api-78392937)    [接口](https://api.apihubs.cn/holiday/get)
